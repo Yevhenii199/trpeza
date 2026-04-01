@@ -1,5 +1,4 @@
-export 
-const menuData: MenuCategory[] = [
+export const menuData: MenuCategory[] = [
   {
     id: "breakfast",
     name: {
