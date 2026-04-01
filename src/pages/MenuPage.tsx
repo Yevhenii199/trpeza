@@ -1727,9 +1727,12 @@ export default function MenuPage() {
         return <Utensils className="h-6 w-6" />;
     }
   };
-
+  
   const formatPrice = (price: number) => {
-    return `${price.toLocaleString()} EUR`;
+    return `${price.toLocaleString(undefined, {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    })} EUR`;
   };
 
   return (
