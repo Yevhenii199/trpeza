@@ -17,7 +17,7 @@ export default function AppFooter() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: About & Contact */}
           <div className="space-y-4">
-            <h3 className="font-display text-xl font-semibold text-primary">GASTRONOM</h3>
+            <h3 className="font-display text-xl font-semibold text-primary">TRPEZA</h3>
             <p className="font-body text-sm leading-relaxed text-secondary-foreground/70">
               {t("footer.about")}
             </p>
@@ -119,7 +119,7 @@ export default function AppFooter() {
         {/* Bottom bar */}
         <div className="mt-10 border-t border-border/20 pt-6 text-center">
           <p className="font-body text-xs text-secondary-foreground/50">
-            © {currentYear} GASTRONOM. {t("footer.rights")}
+            © {currentYear} TRPEZA. {t("footer.rights")}
           </p>
         </div>
       </div>

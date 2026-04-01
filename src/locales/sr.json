@@ -12,8 +12,8 @@
   },
   "home": {
     "hero": {
-      "title": "Okus Tradicije",
-      "subtitle": "Autentična srpska i ruska kuhinja pripremljena sa strašću, servirana sa elegancijom u srcu Beograda.",
+      "title": "Restoran TRPEZA",
+      "subtitle": "Tradicionalna balkanska kuhinja, свежи morski plodovi i pogled koji ostaje u srcu zauvek",
       "cta": "Rezervišite Sto"
     },
     "featured": {
@@ -21,17 +21,41 @@
       "subtitle": "Izbor šefa kuhinje od prepoznatljivih kreacija"
     },
     "dishes": {
-      "dish1": { "name": "Ćevapčići Royale", "description": "Ručno oblikovani roštilj od govedine i jagnjetine sa dimljenim paprika ajolijem." },
-      "dish2": { "name": "Dunavski Losos", "description": "Pečeni file sa zlatnim beurre blanc sosom, mirođijom i sezonskim povrćem." },
-      "dish3": { "name": "Čokoladni Fondan", "description": "Bogata tamna čokoladna torta sa rastopljenim centrom, svežim bobičastim voćem i vanila gelatom." },
-      "dish4": { "name": "Beogradski Gulaš", "description": "Polako dinstana govedina u bogatom paprika sosu sa korenastim povrćem i svežim biljem." }
+      "dish1": {
+        "name": "Ćevapčići Royale",
+        "description": "Ručno oblikovani roštilj od govedine i jagnjetine sa dimljenim paprika ajolijem."
+      },
+      "dish2": {
+        "name": "Dunavski Losos",
+        "description": "Pečeni file sa zlatnim beurre blanc sosom, mirođijom i sezonskim povrćem."
+      },
+      "dish3": {
+        "name": "Čokoladni Fondan",
+        "description": "Bogata tamna čokoladna torta sa rastopljenim centrom, svežim bobičastim voćem i vanila gelatom."
+      },
+      "dish4": {
+        "name": "Gulaš",
+        "description": "Polako dinstana govedina u bogatom paprika sosu sa korenastim povrćem i svežim biljem."
+      }
     },
     "testimonials": {
       "title": "Šta Kažu Naši Gosti",
       "items": [
-        { "quote": "Nezaboravno veče. Ukusi su me preneli pravo u bakin kuhinju, ali sa modernim preokretom.", "author": "Marina S.", "role": "Kritičar hrane" },
-        { "quote": "GASTRONOM je jednostavno najfinije iskustvo obedovanja u Beogradu. Svako jelo je remek-delo.", "author": "Aleksej P.", "role": "Redovni gost" },
-        { "quote": "Ambijent, usluga, hrana — sve je bilo besprekorno. Vraćaćemo se iznova.", "author": "Sofija D.", "role": "Travel bloger" }
+        {
+          "quote": "Nezaboravno veče. Ukusi su me preneli pravo u bakin kuhinju, ali sa modernim preokretom.",
+          "author": "Marina S.",
+          "role": "Kritičar hrane"
+        },
+        {
+          "quote": "Jednostavno najfinije iskustvo obedovanja. Svako jelo je remek-delo.",
+          "author": "Aleksej P.",
+          "role": "Redovni gost"
+        },
+        {
+          "quote": "Ambijent, usluga, hrana — sve je bilo besprekorno. Vraćaćemo se iznova.",
+          "author": "Sofija D.",
+          "role": "Travel bloger"
+        }
       ]
     }
   },
@@ -78,51 +102,47 @@
     },
     "ourStory": {
       "title": "Naša Priča",
-      "description": "GASTRONOM je rođen iz strasti da proslavi bogate kulinarskе tradicije Srbije i Rusije. Naš put je počeo sa jednostavnom vizijom: stvoriti prostor gde se autentični ukusi sreću sa savremenom elegancijom, gde svako jelo pripoveda priču nasledja i zanata.",
+      "description": "Spojili smo vekovne tradicije balkanske kuhinje sa modernim evropskim servisom. Naša misija je da vam dočaramo pravi ukus Crne Gore.",
       "learnMore": "Saznajte Više O Nama"
     }
   },
   "about": {
-    "title": "O GASTRONOM-u",
+    "title": "TRPEZA",
     "subtitle": "Gde tradicija susreće eleganciju",
     "story": {
       "title": "Naša Priča",
       "paragraphs": [
-        "GASTRONOM je osnovan 2015. godine sa jasnom vizijom: da slavi bogate i raznovrsne kulinarskе tradicije Srbije i Rusije na jednom izvanrednom mestu. Ono što je počelo kao mali san vlasnika Mirka Nikolića i šefa kuhinje Aleksandra Petrovića razvilo se u jedan od najcenjenijih finih restorana u Beogradu.",
-        "Naša filozofija je utemeljena na autentičnosti. Verujemo da su najbolja jela ona koja čuvaju svoje nasledje dok prihvataju inovacije. Svaki sastojak je pažljivo odabran, svaka tehnika je precizno usavršena, a svaki tanjir koji izlazi iz naše kuhinje priča priču o posvećenosti i strasti.",
-        "Naš šef, Aleksandar Petrović, obrazovan u Moskvi, Beču i Parizu, donosi jedinstvenu perspektivu na tradicionalnu balkansku i rusku kuhinju. Sa preko 20 godina iskustva u kulinarstvu, razvio je prepoznatljiva jela koja su postala legendarni među ljubiteljima hrane. Njegova posvećenost savršenstvu i poštovanje tradicionalnih načina kuhinjskog rada osiguravaju da je svaki obrok u GASTRONOM-u nezaboravno putovanje.",
-        "Pored izuzetne hrane, GASTRONOM je svetilište refinirane elegancije. Naša intimna blagovaonica, sa toplim svetlom i pažljivo odabranom dekoracijom, kreira atmosferu koja slavi i hranu i društvo. Bilo da ste s nama za posebnu priliku ili tih veče, naš tim je posvećen tome da vaše iskustvo bude zaista nezaboravno.",
-        "Danas, GASTRONOM stoji kao svjedanstvo onoga što se dešava kada se strast, tradicija i inovacija sjedine. Čast nam je biti vaša odrednica za autentičnu srpsku i rusku kuhinju u srcu Beograda."
+        "U osnovi naše filozofije leže iskrenost i autentičnost. Vjerujemo da savršeno jelo ne zahtijeva komplikovane specijalne efekte — ono traži besprijekorne sastojke. Upravo zato lično biramo domaće meso sa farmi za naš roštilj, a ribu i plodove mora kupujemo direktno od lokalnih ribara. Pažljivo čuvamo tradicionalne balkanske recepte, dodajući im blage moderne akcente, kako bi vam svako jelo ispričalo priču o suncu, planinama i Jadranskom moru."
       ]
     },
     "contact": {
       "title": "Posetite Nas",
       "address": "Adresa",
-      "addressValue": "Knez Mihailova 12, Beograd, Srbija",
+      "addressValue": "Partizanski put 176, Sutomore 85355, Crna Gora",
       "phone": "Telefon",
-      "phoneValue": "+381 11 123 4567",
+      "phoneValue": "+382 67 848 108",
       "email": "Email",
-      "emailValue": "info@gastronom.rs"
+      "emailValue": "info@trpeza.rs"
     },
     "hours": {
       "title": "Vremе Otvaranja",
       "weekday": "Ponedeljak - Petak",
-      "weekdayTime": "11:00 - 23:00",
+      "weekdayTime": "08:00 - 23:00",
       "saturday": "Subota",
-      "saturdayTime": "12:00 - 00:00",
+      "saturdayTime": "08:00 - 23:00",
       "sunday": "Nedelja",
-      "sundayTime": "12:00 - 22:00",
+      "sundayTime": "08:00 - 23:00",
       "closed": "Zatvoreno na velike praznike"
     }
   },
   "footer": {
     "about": "Rafinirano iskustvo obedovanja koje spaja tradiciju sa modernom kulinarskom umetnošću. Svako jelo priča priču o strasti i zanatu.",
     "address": "Adresa",
-    "addressValue": "Knez Mihailova 12, Beograd, Srbija",
+    "addressValue": "Partizanski put 176, Sutomore 85355, Crna Gora",
     "phone": "Telefon",
-    "phoneValue": "+381 11 123 4567",
+    "phoneValue": "+382 67 848 108",
     "email": "Email",
-    "emailValue": "info@gastronom.rs",
+    "emailValue": "info@trpeza.rs",
     "contactUs": "Kontaktirajte nas",
     "followUs": "Pratite nas",
     "findUs": "Pronađite nas",

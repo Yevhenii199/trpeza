@@ -12,8 +12,8 @@
   },
   "home": {
     "hero": {
-      "title": "Taste the Tradition",
-      "subtitle": "Authentic Serbian & Russian cuisine crafted with passion, served with elegance in the heart of Belgrade.",
+      "title": "Restaurant TRPEZA",
+      "subtitle": "Traditional Balkan cuisine, the freshest seafood, and a view that will capture your heart",
       "cta": "Book a Table"
     },
     "featured": {
@@ -21,17 +21,41 @@
       "subtitle": "Our chef's selection of signature creations"
     },
     "dishes": {
-      "dish1": { "name": "Ćevapčići Royale", "description": "Hand-formed beef and lamb rolls with smoked paprika aioli and charred onion relish." },
-      "dish2": { "name": "Danube Salmon", "description": "Pan-seared fillet with golden beurre blanc, dill, and seasonal vegetables." },
-      "dish3": { "name": "Chocolate Fondant", "description": "Rich dark chocolate cake with molten center, fresh berries, and vanilla gelato." },
-      "dish4": { "name": "Belgrade Goulash", "description": "Slow-braised beef in a rich paprika broth with root vegetables and fresh herbs." }
+      "dish1": {
+        "name": "Royale Ćevapcici",
+        "description": "Hand-formed beef and lamb rolls with smoked paprika aioli and charred onion relish."
+      },
+      "dish2": {
+        "name": "Danube Salmon",
+        "description": "Pan-seared fillet with golden beurre blanc, dill, and seasonal vegetables."
+      },
+      "dish3": {
+        "name": "Chocolate Fondant",
+        "description": "Rich dark chocolate cake with molten center, fresh berries, and vanilla gelato."
+      },
+      "dish4": {
+        "name": "Goulash",
+        "description": "Slow-braised beef in a rich paprika broth with root vegetables and fresh herbs."
+      }
     },
     "testimonials": {
       "title": "What Our Guests Say",
       "items": [
-        { "quote": "An unforgettable evening. The flavors transported me straight to my grandmother's kitchen, yet with a modern twist I never expected.", "author": "Marina S.", "role": "Food Critic" },
-        { "quote": "GASTRONOM is simply the finest dining experience in Belgrade. Every dish is a masterpiece.", "author": "Aleksei P.", "role": "Regular Guest" },
-        { "quote": "The ambiance, the service, the food — everything was impeccable. We will return again and again.", "author": "Sofia D.", "role": "Travel Blogger" }
+        {
+          "quote": "An unforgettable evening. The flavors transported me straight to my grandmother's kitchen, yet with a modern twist I never expected.",
+          "author": "Marina S.",
+          "role": "Food Critic"
+        },
+        {
+          "quote": "Simply the finest dining experience. Every dish is a masterpiece.",
+          "author": "Aleksei P.",
+          "role": "Regular Guest"
+        },
+        {
+          "quote": "The ambiance, the service, the food — everything was impeccable. We will return again and again.",
+          "author": "Sofia D.",
+          "role": "Travel Blogger"
+        }
       ]
     }
   },
@@ -78,51 +102,47 @@
     },
     "ourStory": {
       "title": "Our Story",
-      "description": "GASTRONOM was born from a passion to celebrate the rich culinary traditions of Serbia and Russia. Our journey began with a simple vision: to create a space where authentic flavors meet contemporary elegance, where every meal tells a story of heritage and craft.",
+      "description": "We have combined centuries-old Balkan culinary traditions with modern European service. Our mission is to give you a true taste of Montenegro.",
       "learnMore": "Learn More About Us"
     }
   },
   "about": {
-    "title": "About GASTRONOM",
+    "title": "TRPEZA",
     "subtitle": "Where tradition meets elegance",
     "story": {
       "title": "Our Story",
       "paragraphs": [
-        "GASTRONOM was founded in 2015 with a singular vision: to celebrate the rich and diverse culinary traditions of Serbia and Russia in one extraordinary space. What began as a small dream by owner Mirko Nikolić and chef Aleksandar Petrović has evolved into one of Belgrade's most celebrated fine dining establishments.",
-        "Our philosophy is rooted in authenticity. We believe that the best dishes are those that honor their heritage while embracing innovation. Every ingredient is carefully sourced, every technique is meticulously refined, and every plate that leaves our kitchen tells a story of dedication and passion.",
-        "Our chef, Aleksandar Petrović, trained in Moscow, Vienna, and Paris, brings a unique perspective to traditional Balkan and Russian cuisine. With over 20 years of culinary experience, he has developed signature dishes that have become legendary among food enthusiasts. His commitment to excellence and his respect for traditional cooking methods ensure that every meal at GASTRONOM is an unforgettable journey.",
-        "Beyond exceptional food, GASTRONOM is a sanctuary of refined elegance. Our intimate dining room, with its warm lighting and carefully curated décor, creates an atmosphere that celebrates both the food and the company. Whether you're joining us for a special occasion or a quiet evening, our team is dedicated to making your experience truly memorable.",
-        "Today, GASTRONOM stands as a testament to what happens when passion, tradition, and innovation converge. We are honored to be your destination for authentic Serbian and Russian cuisine in the heart of Belgrade."
+        "Our philosophy is rooted in honesty and authenticity. We believe that a perfect dish doesn’t need complex special effects — it requires flawless ingredients. That is why we hand-pick farm-raised meats for our grill and buy fish and seafood directly from local fishermen. We carefully preserve traditional Balkan recipes, adding light modern touches so that every dish tells you a story of the sun, the mountains, and the Adriatic Sea."
       ]
     },
     "contact": {
       "title": "Visit Us",
       "address": "Address",
-      "addressValue": "12 Knez Mihailova Street, Belgrade, Serbia",
+      "addressValue": "Partizanski put 176, Sutomore 85355, Montenegro",
       "phone": "Phone",
-      "phoneValue": "+381 11 123 4567",
+      "phoneValue": "+382 67 848 108",
       "email": "Email",
-      "emailValue": "info@gastronom.rs"
+      "emailValue": "info@trpeza.rs"
     },
     "hours": {
       "title": "Opening Hours",
       "weekday": "Monday - Friday",
-      "weekdayTime": "11:00 AM - 11:00 PM",
+      "weekdayTime": "08:00 AM - 11:00 PM",
       "saturday": "Saturday",
-      "saturdayTime": "12:00 PM - 12:00 AM",
+      "saturdayTime": "08:00 AM - 11:00 PM",
       "sunday": "Sunday",
-      "sundayTime": "12:00 PM - 10:00 PM",
+      "sundayTime": "08:00 AM - 11:00 PM",
       "closed": "Closed on major holidays"
     }
   },
   "footer": {
     "about": "A refined dining experience blending tradition with modern culinary artistry. Every dish tells a story of passion and craft.",
     "address": "Address",
-    "addressValue": "12 Knez Mihailova, Belgrade, Serbia",
+    "addressValue": "Partizanski put 176, Sutomore 85355, Montenegro",
     "phone": "Phone",
-    "phoneValue": "+381 11 123 4567",
+    "phoneValue": "+382 67 848 108",
     "email": "Email",
-    "emailValue": "info@gastronom.rs",
+    "emailValue": "info@trpeza.rs",
     "contactUs": "Contact Us",
     "followUs": "Follow Us",
     "findUs": "Find Us",
