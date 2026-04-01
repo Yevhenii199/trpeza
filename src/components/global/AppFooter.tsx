@@ -65,7 +65,7 @@ export default function AppFooter() {
           <div className="space-y-4">
             <h4 className="font-display text-lg font-semibold text-primary">{t("footer.findUs")}</h4>
             <a
-              href="https://maps.google.com/?q=Knez+Mihailova+12+Belgrade+Serbia"
+              href="https://maps.app.goo.gl/YaSVjs1PufCVGuNT6"
               target="_blank"
               rel="noopener noreferrer"
               className="group block overflow-hidden rounded-lg border border-border/20"
@@ -84,7 +84,7 @@ export default function AppFooter() {
           <div className="space-y-4">
             <h4 className="font-display text-lg font-semibold text-primary">{t("footer.followUs")}</h4>
             <div className="flex gap-3">
-              <a
+              {/* <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -92,9 +92,9 @@ export default function AppFooter() {
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-border/20 text-secondary-foreground/60 transition-colors hover:bg-primary hover:text-primary-foreground"
               >
                 <Facebook className="h-5 w-5" />
-              </a>
+              </a> */}
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/trpeza_sutomore?igsh=MXVoaGoydTZ0N2k3Nw=="
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -102,16 +102,16 @@ export default function AppFooter() {
               >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a
+              {/* <a
                 href="https://tripadvisor.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TripAdvisor"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-border/20 text-secondary-foreground/60 transition-colors hover:bg-primary hover:text-primary-foreground"
               >
-                {/* TripAdvisor — no lucide icon, using a text mark */}
+            
                 <span className="font-display text-sm font-bold">TA</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
