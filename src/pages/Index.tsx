@@ -36,17 +36,9 @@ export default function Index() {
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative h-[85vh] min-h-[600px] flex items-center justify-center overflow-hidden">
-        <img
-          src={heroImage}
-          alt="Fine dining at GASTRONOM"
-          className="absolute inset-0 h-full w-full object-cover"
-          width={1920}
-          height={1080}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-deep-darker/90 via-deep-darker/50 to-deep-darker/30" />
-        <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-3xl">
+      {/* Hero Slider */}
+      <HeroSlider slides={heroSlides}>
+        <div className="flex flex-col items-center text-center max-w-3xl">
           <div className="mb-6 h-px w-16 bg-primary" />
           <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-bold tracking-wide text-cream">
             {t("home.hero.title")}
@@ -56,13 +48,13 @@ export default function Index() {
           </p>
           <Link
             to={`/${currentLang}/menu`}
-            className="mt-10 inline-block rounded-sm bg-primary px-8 py-3.5 font-body text-sm uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-gold-light"
+            className="mt-10 inline-block rounded-sm bg-primary px-8 py-3.5 font-body text-sm uppercase tracking-[0.2em] text-primary-foreground transition-colors hover:bg-gold-light focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-deep-darker"
           >
             {t("home.hero.cta")}
           </Link>
           <div className="mt-6 h-px w-16 bg-primary" />
         </div>
-      </section>
+      </HeroSlider>
 
       {/* Featured Dishes */}
       <section className="py-20 bg-background">
