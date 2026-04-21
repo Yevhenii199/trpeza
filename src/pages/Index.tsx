@@ -80,6 +80,22 @@ export default function Index() {
         </div>
       </HeroSlider>
 
+      {/* Photo Gallery */}
+      <section className="py-20 bg-background">
+        <div className="container">
+          <div className="text-center mb-14">
+            <div className="mx-auto mb-4 h-px w-12 bg-primary" />
+            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">
+              {t("home.gallery.title")}
+            </h2>
+            <p className="mt-3 font-body text-muted-foreground">
+              {t("home.gallery.subtitle")}
+            </p>
+          </div>
+          <PhotoGallery images={galleryImages} />
+        </div>
+      </section>
+
       {/* Featured Dishes */}
       <section className="py-20 bg-background">
         <div className="container">
