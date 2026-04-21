@@ -2,7 +2,6 @@ import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Quote } from "lucide-react";
 import HeroSlider, { type HeroSlide } from "@/components/HeroSlider";
-import PhotoGallery, { type GalleryImage } from "@/components/PhotoGallery";
 import hero1 from "@/assets/hero-1.jpeg";
 import hero2 from "@/assets/hero-2.jpeg";
 import hero3 from "@/assets/hero-3.jpeg";
@@ -12,16 +11,6 @@ import dish1 from "@/assets/dish-1.jpg";
 import dish2 from "@/assets/dish-2.jpg";
 import dish3 from "@/assets/dish-3.jpg";
 import dish4 from "@/assets/dish-4.jpg";
-import gallery1 from "@/assets/gallery-1.jpeg";
-import gallery2 from "@/assets/gallery-2.jpeg";
-import gallery3 from "@/assets/gallery-3.jpeg";
-import gallery4 from "@/assets/gallery-4.jpeg";
-import gallery5 from "@/assets/gallery-5.jpeg";
-import gallery6 from "@/assets/gallery-6.jpeg";
-import gallery7 from "@/assets/gallery-7.jpeg";
-import gallery8 from "@/assets/gallery-8.jpeg";
-import gallery9 from "@/assets/gallery-9.jpeg";
-import gallery10 from "@/assets/gallery-10.jpeg";
 
 const heroSlides: HeroSlide[] = [
   { src: hero1, alt: "Grilled octopus with black risotto" },
@@ -29,19 +18,6 @@ const heroSlides: HeroSlide[] = [
   { src: hero3, alt: "Signature seafood plating" },
   { src: hero4, alt: "Sliced steak with red wine" },
   { src: hero5, alt: "Octopus tentacle close-up with olives" },
-];
-
-const galleryImages: GalleryImage[] = [
-  { src: gallery1, alt: "Sliced tuna steak with fresh lemon" },
-  { src: gallery2, alt: "Sommelier presenting a bottle of Italian wine" },
-  { src: gallery3, alt: "Seafood pasta with Pinot Grigio" },
-  { src: gallery4, alt: "Grilled octopus on black risotto with olives" },
-  { src: gallery5, alt: "Plated seafood tagliatelle with white wine" },
-  { src: gallery6, alt: "Guest enjoying seafood pasta" },
-  { src: gallery7, alt: "Seafood pasta with rosé wine" },
-  { src: gallery8, alt: "Close-up of octopus and mussel pasta" },
-  { src: gallery9, alt: "Restaurant table setting with seafood pasta" },
-  { src: gallery10, alt: "Plated frutti di mare with rosé" },
 ];
 
 const dishImages = [dish1, dish2, dish3, dish4];
@@ -79,22 +55,6 @@ export default function Index() {
           <div className="mt-6 h-px w-16 bg-primary" />
         </div>
       </HeroSlider>
-
-      {/* Photo Gallery */}
-      <section className="py-20 bg-background">
-        <div className="container">
-          <div className="text-center mb-14">
-            <div className="mx-auto mb-4 h-px w-12 bg-primary" />
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-foreground">
-              {t("home.gallery.title")}
-            </h2>
-            <p className="mt-3 font-body text-muted-foreground">
-              {t("home.gallery.subtitle")}
-            </p>
-          </div>
-          <PhotoGallery images={galleryImages} />
-        </div>
-      </section>
 
       {/* Featured Dishes */}
       <section className="py-20 bg-background">
