@@ -19,6 +19,10 @@
       "title": "Izdvojena Jela",
       "subtitle": "Izbor šefa kuhinje od prepoznatljivih kreacija"
     },
+    "gallery": {
+      "title": "Galerija",
+      "subtitle": "Pogled u našu kuhinju, naš sto i naš zanat"
+    },
     "dishes": {
       "dish1": {
         "name": "Ćevapčići Royale",
