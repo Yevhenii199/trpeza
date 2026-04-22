@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 import { useParams, useLocation } from "react-router-dom";
 import {
   siteConfig,
@@ -25,6 +25,32 @@ const localeMap: Record<string, string> = {
   ru: "ru_RU",
 };
 
+/** Set or create a <meta> tag by name or property attribute. */
+function setMeta(attr: "name" | "property", key: string, content: string) {
+  let el = document.head.querySelector<HTMLMetaElement>(
+    `meta[${attr}="${key}"]`
+  );
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute(attr, key);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+}
+
+function setCanonical(url: string) {
+  let el = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+  if (!el) {
+    el = document.createElement("link");
+    el.setAttribute("rel", "canonical");
+    document.head.appendChild(el);
+  }
+  el.setAttribute("href", url);
+}
+
+/**
+ * Imperatively syncs <head> meta tags. No external deps, no provider needed.
+ */
 export default function SEO({
   title,
   description,
@@ -35,44 +61,45 @@ export default function SEO({
   const { lang } = useParams<{ lang?: string }>();
   const { pathname } = useLocation();
 
-  const locale = (lang && lang in siteConfig.defaults
-    ? lang
-    : "en") as SupportedSeoLocale;
+  useEffect(() => {
+    const locale = (lang && lang in siteConfig.defaults
+      ? lang
+      : "en") as SupportedSeoLocale;
 
-  const defaults = siteConfig.defaults[locale];
-  const finalTitle = title ?? defaults.title;
-  const finalDescription = description ?? defaults.description;
-  const finalImage = absoluteUrl(image ?? siteConfig.ogImagePath);
-  const url = canonical ?? absoluteUrl(pathname || "/");
+    const defaults = siteConfig.defaults[locale];
+    const finalTitle = title ?? defaults.title;
+    const finalDescription = description ?? defaults.description;
+    const finalImage = absoluteUrl(image ?? siteConfig.ogImagePath);
+    const url = canonical ?? absoluteUrl(pathname || "/");
 
-  return (
-    <Helmet>
-      <html lang={locale} />
-      <title>{finalTitle}</title>
-      <meta name="description" content={finalDescription} />
-      <link rel="canonical" href={url} />
+    document.title = finalTitle;
+    document.documentElement.lang = locale;
 
-      {/* Open Graph */}
-      <meta property="og:title" content={finalTitle} />
-      <meta property="og:description" content={finalDescription} />
-      <meta property="og:type" content={type} />
-      <meta property="og:url" content={url} />
-      <meta property="og:site_name" content={siteConfig.siteName} />
-      <meta property="og:locale" content={localeMap[locale] ?? "en_US"} />
-      <meta property="og:image" content={finalImage} />
-      <meta property="og:image:secure_url" content={finalImage} />
-      <meta property="og:image:width" content={String(siteConfig.ogImageWidth)} />
-      <meta property="og:image:height" content={String(siteConfig.ogImageHeight)} />
-      <meta property="og:image:alt" content={siteConfig.ogImageAlt} />
+    setMeta("name", "description", finalDescription);
+    setCanonical(url);
 
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={finalTitle} />
-      <meta name="twitter:description" content={finalDescription} />
-      <meta name="twitter:image" content={finalImage} />
-      {siteConfig.twitterHandle && (
-        <meta name="twitter:site" content={siteConfig.twitterHandle} />
-      )}
-    </Helmet>
-  );
+    // Open Graph
+    setMeta("property", "og:title", finalTitle);
+    setMeta("property", "og:description", finalDescription);
+    setMeta("property", "og:type", type);
+    setMeta("property", "og:url", url);
+    setMeta("property", "og:site_name", siteConfig.siteName);
+    setMeta("property", "og:locale", localeMap[locale] ?? "en_US");
+    setMeta("property", "og:image", finalImage);
+    setMeta("property", "og:image:secure_url", finalImage);
+    setMeta("property", "og:image:width", String(siteConfig.ogImageWidth));
+    setMeta("property", "og:image:height", String(siteConfig.ogImageHeight));
+    setMeta("property", "og:image:alt", siteConfig.ogImageAlt);
+
+    // Twitter
+    setMeta("name", "twitter:card", "summary_large_image");
+    setMeta("name", "twitter:title", finalTitle);
+    setMeta("name", "twitter:description", finalDescription);
+    setMeta("name", "twitter:image", finalImage);
+    if (siteConfig.twitterHandle) {
+      setMeta("name", "twitter:site", siteConfig.twitterHandle);
+    }
+  }, [title, description, image, type, canonical, lang, pathname]);
+
+  return null;
 }
