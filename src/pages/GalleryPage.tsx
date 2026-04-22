@@ -40,6 +40,10 @@ export default function GalleryPage() {
 
   return (
     <>
+      <SEO
+        title={`${t("home.gallery.title")} — ${t("home.hero.title")}`.slice(0, 60)}
+        description={t("home.gallery.subtitle")}
+      />
       <section className="relative bg-secondary py-20">
         <div className="container">
           <div className="text-center">
