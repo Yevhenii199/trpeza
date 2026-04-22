@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import SEO from "@/components/SEO";
 import PhotoGallery, { type GalleryImage } from "@/components/PhotoGallery";
 import gallery1 from "@/assets/gallery-1.jpeg";
 import gallery2 from "@/assets/gallery-2.jpeg";
