@@ -51,7 +51,7 @@ export default function AppHeader() {
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link to={`/${currentLang}`} className="font-display text-2xl font-bold tracking-widest text-primary">
-          TRPEZA
+          ТРПЕЗА
         </Link>
 
         {/* Desktop Nav */}
