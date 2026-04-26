@@ -26,12 +26,12 @@
     },
     "dishes": {
       "dish1": {
-        "name": "Ćevapčići Royale",
-        "description": "Ručno oblikovani roštilj od govedine i jagnjetine sa dimljenim paprika ajolijem."
+        "name": "Balkanski Grill Tanjir",
+        "description": "Sočno meso sa roštilja uz zlatni krompir, sveže povrće i masline — bogat tanjir za pravo druženje."
       },
       "dish2": {
-        "name": "Dunavski Losos",
-        "description": "Pečeni file sa zlatnim beurre blanc sosom, mirođijom i sezonskim povrćem."
+        "name": "Jadranski Ulov Dana",
+        "description": "Sveža riba i morski plodovi od lokalnih ribara, pripremljeni jednostavno i iskreno da sačuvaju ukus mora."
       }
     },
     "testimonials": {

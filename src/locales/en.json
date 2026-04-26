@@ -26,12 +26,12 @@
     },
     "dishes": {
       "dish1": {
-        "name": "Royale Ćevapcici",
-        "description": "Hand-formed beef and lamb rolls with smoked paprika aioli and charred onion relish."
+        "name": "Balkan Grill Platter",
+        "description": "Juicy grilled meats with golden potatoes, fresh vegetables, and olives — a generous plate made for sharing."
       },
       "dish2": {
-        "name": "Danube Salmon",
-        "description": "Pan-seared fillet with golden beurre blanc, dill, and seasonal vegetables."
+        "name": "Adriatic Catch of the Day",
+        "description": "Fresh fish and seafood from local fishermen, prepared simply and honestly to preserve the taste of the sea."
       }
     },
     "testimonials": {
