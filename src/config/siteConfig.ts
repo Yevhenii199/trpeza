@@ -13,7 +13,7 @@ export const siteConfig = {
   siteUrl: "https://trpezasutomore.me",
 
   /** Brand name shown in OG site_name. */
-  siteName: "Restaurant ТРПЕЗА",
+  siteName: "Ресторан ТРПЕЗА",
 
   /** Default Twitter handle (with @). Leave empty if none. */
   twitterHandle: "",
@@ -23,19 +23,19 @@ export const siteConfig = {
 
   ogImageWidth: 1200,
   ogImageHeight: 630,
-  ogImageAlt: "Restaurant ТРПЕЗА — Balkan cuisine and Adriatic seafood",
+  ogImageAlt: "Ресторан ТРПЕЗА — балканская кухня и морепродукты Адриатики",
 
   /** Per-locale defaults used when a page does not provide its own. */
   defaults: {
     en: {
-      title: "ТРПЕЗА — Balkan Cuisine & Adriatic Seafood",
+      title: "ТРПЕЗА — Балканская кухня и морепродукты Адриатики",
       description:
-        "Discover authentic Balkan flavors and the freshest Adriatic seafood. Reserve your table at ТРПЕЗА today.",
+        "Откройте аутентичные балканские вкусы и свежайшие морепродукты Адриатики. Забронируйте столик в ТРПЕЗА сегодня.",
     },
     sr: {
-      title: "ТРПЕЗА — Balkanska kuhinja i jadranski plodovi mora",
+      title: "ТРПЕЗА — Балканска кухиња и јадрански плодови мора",
       description:
-        "Otkrijte autentične balkanske ukuse i najsvežije plodove mora Jadrana. Rezervišite svoj sto u ТРПЕЗА još danas.",
+        "Откријте аутентичне балканске укусе и најсвежије плодове мора Јадрана. Резервишите свој сто у ТРПЕЗА још данас.",
     },
     ru: {
       title: "ТРПЕЗА — Балканская кухня и морепродукты Адриатики",
