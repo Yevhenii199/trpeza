@@ -14,7 +14,7 @@ export default function AppFooter() {
   return (
     <footer className="bg-secondary text-secondary-foreground">
       <div className="container py-12">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {/* Column 1: About & Contact */}
           <div className="space-y-4">
             <h3 className="font-display text-xl font-semibold text-primary">ТРПЕЗА</h3>
@@ -48,20 +48,7 @@ export default function AppFooter() {
             </div>
           </div>
 
-          {/* Column 2: Legal */}
-          <div className="space-y-4">
-            <h4 className="font-display text-lg font-semibold text-primary">{t("footer.legal")}</h4>
-            <nav className="flex flex-col gap-2" aria-label="Legal">
-              <a href={`/${currentLang}/privacy`} className="text-sm text-secondary-foreground/70 hover:text-primary transition-colors">
-                {t("footer.privacyPolicy")}
-              </a>
-              <a href={`/${currentLang}/terms`} className="text-sm text-secondary-foreground/70 hover:text-primary transition-colors">
-                {t("footer.termsOfService")}
-              </a>
-            </nav>
-          </div>
-
-          {/* Column 3: Find Us (Map placeholder) */}
+          {/* Column 2: Find Us (Map placeholder) */}
           <div className="space-y-4">
             <h4 className="font-display text-lg font-semibold text-primary">{t("footer.findUs")}</h4>
             <a
@@ -80,7 +67,7 @@ export default function AppFooter() {
             </a>
           </div>
 
-          {/* Column 4: Social */}
+          {/* Column 3: Social */}
           <div className="space-y-4">
             <h4 className="font-display text-lg font-semibold text-primary">{t("footer.followUs")}</h4>
             <div className="flex gap-3">
