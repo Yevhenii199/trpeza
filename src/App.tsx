@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Route, Routes, Navigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Analytics } from "@vercel/analytics/react"; // Импортируем компонент аналитики
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -35,6 +36,7 @@ function LangGuard({ children }: { children: React.ReactNode }) {
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
+    <Analytics /> {/* Размещаем здесь для глобального трекинга */}
     <TooltipProvider>
       <Toaster />
       <Sonner />
