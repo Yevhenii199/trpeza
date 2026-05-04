@@ -3,13 +3,13 @@ import { useTranslation } from "react-i18next";
 import { Quote } from "lucide-react";
 import SEO from "@/components/SEO";
 import HeroSlider, { type HeroSlide } from "@/components/HeroSlider";
-import hero1 from "@/assets/hero-1.jpeg";
-import hero2 from "@/assets/hero-2.jpeg";
-import hero3 from "@/assets/hero-3.jpeg";
-import hero4 from "@/assets/hero-4.jpeg";
-import hero5 from "@/assets/hero-5.jpeg";
-import featuredGrillPlatter from "@/assets/featured-grill-platter.jpeg";
-import featuredPizza from "@/assets/featured-pizza.jpeg";
+import hero1 from "@/assets/hero-1.webp";
+import hero2 from "@/assets/hero-2.webp";
+import hero3 from "@/assets/hero-3.webp";
+import hero4 from "@/assets/hero-4.webp";
+import hero5 from "@/assets/hero-5.webp";
+import featuredGrillPlatter from "@/assets/featured-grill-platter.webp";
+import featuredPizza from "@/assets/featured-pizza.webp";
 
 const heroSlides: HeroSlide[] = [
   { src: hero1, alt: "Grilled octopus with black risotto" },

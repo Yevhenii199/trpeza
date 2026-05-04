@@ -1,20 +1,20 @@
 import { useTranslation } from "react-i18next";
 import SEO from "@/components/SEO";
 import PhotoGallery, { type GalleryImage } from "@/components/PhotoGallery";
-import gallery1 from "@/assets/gallery-1.jpeg";
-import gallery2 from "@/assets/gallery-2.jpeg";
-import gallery3 from "@/assets/gallery-3.jpeg";
-import gallery4 from "@/assets/gallery-4.jpeg";
-import gallery5 from "@/assets/gallery-5.jpeg";
-import gallery6 from "@/assets/gallery-6.jpeg";
-import gallery7 from "@/assets/gallery-7.jpeg";
-import gallery8 from "@/assets/gallery-8.jpeg";
-import gallery9 from "@/assets/gallery-9.jpeg";
-import gallery10 from "@/assets/gallery-10.jpeg";
-import gallery11 from "@/assets/gallery-11.jpeg";
-import gallery12 from "@/assets/gallery-12.jpeg";
-import gallery13 from "@/assets/gallery-13.jpeg";
-import gallery14 from "@/assets/gallery-14.jpeg";
+import gallery1 from "@/assets/gallery-1.webp";
+import gallery2 from "@/assets/gallery-2.webp";
+import gallery3 from "@/assets/gallery-3.webp";
+import gallery4 from "@/assets/gallery-4.webp";
+import gallery5 from "@/assets/gallery-5.webp";
+import gallery6 from "@/assets/gallery-6.webp";
+import gallery7 from "@/assets/gallery-7.webp";
+import gallery8 from "@/assets/gallery-8.webp";
+import gallery9 from "@/assets/gallery-9.webp";
+import gallery10 from "@/assets/gallery-10.webp";
+import gallery11 from "@/assets/gallery-11.webp";
+import gallery12 from "@/assets/gallery-12.webp";
+import gallery13 from "@/assets/gallery-13.webp";
+import gallery14 from "@/assets/gallery-14.webp";
 
 const galleryImages: GalleryImage[] = [
   { src: gallery1, alt: "Sliced tuna steak with fresh lemon" },
