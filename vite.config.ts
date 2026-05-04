@@ -19,4 +19,20 @@ export default defineConfig(({ mode }) => ({
     },
     dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime"],
   },
+  build: {
+    // Smaller, parallel-loaded vendor chunks → less unused JS on initial paint
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          "react-vendor": ["react", "react-dom", "react-router-dom"],
+          "i18n-vendor": ["i18next", "react-i18next"],
+          "query-vendor": ["@tanstack/react-query"],
+        },
+      },
+    },
+    // Inline tiny assets to cut request count
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
+    reportCompressedSize: false,
+  },
 }));
