@@ -19,7 +19,8 @@
     },
     "featured": {
       "title": "Избранные Блюда",
-      "subtitle": "Выбор шеф-повара из фирменных творений"
+      "subtitle": "Выбор шеф-повара из фирменных творений",
+      "no_photo": "Фото скоро появится"
     },
     "gallery": {
       "title": "Галерея",
@@ -75,7 +76,7 @@
       "phone": "Телефон",
       "phoneValue": "+382 67 848 108",
       "email": "Эл. почта",
-    "emailValue": "brtuttobene@gmail.com"
+      "emailValue": "brtuttobene@gmail.com"
     },
     "hours": {
       "title": "Время Работы",

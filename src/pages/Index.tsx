@@ -8,8 +8,10 @@ import hero2 from "@/assets/hero-2.webp";
 import hero3 from "@/assets/hero-3.webp";
 import hero4 from "@/assets/hero-4.webp";
 import hero5 from "@/assets/hero-5.webp";
-import featuredGrillPlatter from "@/assets/featured-grill-platter.webp";
-import featuredPizza from "@/assets/featured-pizza.webp";
+import FeaturedDishes from "@/components/FeaturedDishes";
+// import featuredGrillPlatter from "@/assets/featured-grill-platter.webp";
+// import featuredPizza from "@/assets/featured-pizza.webp";
+
 
 const heroSlides: HeroSlide[] = [
   { src: hero1, alt: "Grilled octopus with black risotto" },
@@ -19,8 +21,8 @@ const heroSlides: HeroSlide[] = [
   { src: hero5, alt: "Octopus tentacle close-up with olives" },
 ];
 
-const dishImages = [featuredGrillPlatter, featuredPizza];
-const dishKeys = ["dish1", "dish2"];
+// const dishImages = [featuredGrillPlatter, featuredPizza];
+// const dishKeys = ["dish1", "dish2"];
 
 export default function Index() {
   const { t } = useTranslation();
@@ -58,9 +60,11 @@ export default function Index() {
           <div className="mt-6 h-px w-16 bg-primary" />
         </div>
       </HeroSlider>
+      <FeaturedDishes />
+      
 
       {/* Featured Dishes */}
-      <section className="py-20 bg-background">
+      {/* <section className="py-20 bg-background">
         <div className="container">
           <div className="text-center mb-14">
             <div className="mx-auto mb-4 h-px w-12 bg-primary" />
@@ -99,7 +103,7 @@ export default function Index() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
       <section className="py-20 bg-secondary">

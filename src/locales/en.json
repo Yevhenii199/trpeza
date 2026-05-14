@@ -19,7 +19,8 @@
     },
     "featured": {
       "title": "Featured Dishes",
-      "subtitle": "Our chef's selection of signature creations"
+      "subtitle": "Our chef's selection of signature creations",
+      "no_photo": "Photo coming soon"
     },
     "gallery": {
       "title": "Gallery",
@@ -75,7 +76,7 @@
       "phone": "Phone",
       "phoneValue": "+382 67 848 108",
       "email": "Email",
-    "emailValue": "brtuttobene@gmail.com"
+      "emailValue": "brtuttobene@gmail.com"
     },
     "hours": {
       "title": "Opening Hours",

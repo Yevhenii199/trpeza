@@ -19,7 +19,8 @@
     },
     "featured": {
       "title": "Izdvojena Jela",
-      "subtitle": "Izbor šefa kuhinje od prepoznatljivih kreacija"
+      "subtitle": "Izbor šefa kuhinje od prepoznatljivih kreacija",
+      "no_photo": "Fotografija stiže uskoro"
     },
     "gallery": {
       "title": "Galerija",
@@ -75,7 +76,7 @@
       "phone": "Telefon",
       "phoneValue": "+382 67 848 108",
       "email": "Email",
-    "emailValue": "brtuttobene@gmail.com"
+      "emailValue": "brtuttobene@gmail.com"
     },
     "hours": {
       "title": "Vremе Otvaranja",
