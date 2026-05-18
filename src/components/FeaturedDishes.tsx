@@ -1,35 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { menuData } from "@/data/menuData";
+import { featuredDishes } from "@/data/menuData"; // Импортируем уже готовый массив
 import type { SupportedLanguage } from "@/i18n";
-import dish1 from "@/assets/dish-1.webp";
-import dish2 from "@/assets/featured-pizza.webp";
-import dish3 from "@/assets/featured-grill-platter.webp";
-// meat-dishes-03
-// import dish2 from "@/assets/dish-2.webp";
-// import dish3 from "@/assets/dish-3.webp";
-// import dish4 from "@/assets/dish-4.webp";
-
-const FEATURED_DISH_IDS = [
-  "fish-specialties-05",
-  "pizza-06",            // Реджина (Regina)Grilled Octopus
-  "meat-dishes-03",      // Pork filet
-  "pasta-05",            // Tagliatelle with Beefsteak
-  "meat-dishes-04",      // Marinated BBQ Pork Ribs
-  "meat-dishes-02",      // Pljeskavica in Dough
-];
-
-const dishImages = [dish1, dish2, dish3];
-
-function getFeaturedDishes() {
-  const flatItems = menuData.flatMap((category) => category.items);
-  return FEATURED_DISH_IDS.map((id, index) => {
-    const item = flatItems.find((dish) => dish.id === id);
-    return item ? { ...item, image: dishImages[index] || null } : null;
-  }).filter(Boolean) as Array<
-    ReturnType<typeof flatItems.find> & { image: string | null }
-  >;
-}
 
 function formatPrice(price: number) {
   return `${price.toLocaleString(undefined, {
@@ -42,7 +14,6 @@ export default function FeaturedDishes() {
   const { t } = useTranslation();
   const { lang } = useParams<{ lang?: string }>();
   const currentLang = (lang || "en") as SupportedLanguage;
-  const dishes = getFeaturedDishes();
 
   return (
     <section className="py-20 bg-background">
@@ -60,46 +31,51 @@ export default function FeaturedDishes() {
 
         {/* Сетка карточек */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {dishes.map((dish) => (
-            <div
-              key={dish.id}
-              className="group flex flex-col h-full overflow-hidden rounded-lg bg-card border border-border transition-all duration-300 hover:shadow-xl hover:border-primary/30"
-            >
-              {/* Область изображения или плейсхолдера */}
-              <div className="aspect-[4/3] overflow-hidden shrink-0 bg-muted flex items-center justify-center">
-                {dish.image ? (
-                  <img
-                    src={dish.image}
-                    alt={dish.name[currentLang]}
-                    loading="lazy"
-                    width={640}
-                    height={480}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                ) : (
-                  <div className="flex flex-col items-center px-6 text-center">
-                    <span className="font-display text-xs uppercase tracking-widest text-muted-foreground/60">
-                      {t("home.featured.no_photo")}
+          {featuredDishes.map((dish) => {
+            // Проверяем, есть ли у блюда реальное фото (не плейсхолдер)
+            const hasPhoto = dish.imageUrl && dish.imageUrl !== "/placeholder.svg";
+
+            return (
+              <div
+                key={dish.id}
+                className="group flex flex-col h-full overflow-hidden rounded-lg bg-card border border-border transition-all duration-300 hover:shadow-xl hover:border-primary/30"
+              >
+                {/* Область изображения или плейсхолдера */}
+                <div className="aspect-[4/3] overflow-hidden shrink-0 bg-muted flex items-center justify-center">
+                  {hasPhoto ? (
+                    <img
+                      src={dish.imageUrl}
+                      alt={dish.name[currentLang]}
+                      loading="lazy"
+                      width={640}
+                      height={480}
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="flex flex-col items-center px-6 text-center">
+                      <span className="font-display text-xs uppercase tracking-widest text-muted-foreground/60">
+                        {t("home.featured.no_photo")}
+                      </span>
+                    </div>
+                  )}
+                </div>
+
+                <div className="p-5 flex flex-col flex-1">
+                  <div className="flex items-start justify-between gap-3 mb-3">
+                    <h3 className="font-display text-lg font-semibold text-card-foreground group-hover:text-primary transition-colors">
+                      {dish.name[currentLang]}
+                    </h3>
+                    <span className="shrink-0 font-display text-base font-semibold text-primary">
+                      {formatPrice(dish.price)}
                     </span>
                   </div>
-                )}
-              </div>
-
-              <div className="p-5 flex flex-col flex-1">
-                <div className="flex items-start justify-between gap-3 mb-3">
-                  <h3 className="font-display text-lg font-semibold text-card-foreground group-hover:text-primary transition-colors">
-                    {dish.name[currentLang]}
-                  </h3>
-                  <span className="shrink-0 font-display text-base font-semibold text-primary">
-                    {formatPrice(dish.price)}
-                  </span>
+                  <p className="font-body text-sm text-muted-foreground leading-relaxed">
+                    {dish.description[currentLang]}
+                  </p>
                 </div>
-                <p className="font-body text-sm text-muted-foreground leading-relaxed">
-                  {dish.description[currentLang]}
-                </p>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Кнопка перехода в меню */}

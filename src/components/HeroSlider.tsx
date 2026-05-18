@@ -118,7 +118,7 @@ export default function HeroSlider({
                 width={1920}
                 height={1080}
                 loading={i === 0 ? "eager" : "lazy"}
-                fetchPriority={i === 0 ? "high" : "low"}
+                fetchpriority={i === 0 ? "high" : "low"}
                 decoding="async"
                 className="h-full w-full object-cover"
                 draggable={false}

@@ -1,3 +1,7 @@
+import dish1 from "@/assets/grilled-octopus.webp";
+import dish2 from "@/assets/pizza-regina.webp";
+import dish3 from "@/assets/pork-filet.webp";
+
 export const menuData: MenuCategory[] = [
   {
     id: "breakfast",
@@ -393,7 +397,8 @@ export const menuData: MenuCategory[] = [
         },
         price: 10.00,
         category: "meat-dishes",
-        imageUrl: "/placeholder.svg"
+        imageUrl: "/placeholder.svg",
+        isFeatured: true
       },
       {
         id: "meat-dishes-03",
@@ -409,7 +414,8 @@ export const menuData: MenuCategory[] = [
         },
         price: 15.00,
         category: "meat-dishes",
-        imageUrl: "/placeholder.svg"
+        imageUrl: dish3, // <-- Привязали конкретную картинку напрямую к блюду!
+        isFeatured: true 
       },
       {
         id: "meat-dishes-04",
@@ -425,7 +431,8 @@ export const menuData: MenuCategory[] = [
         },
         price: 16.00,
         category: "meat-dishes",
-        imageUrl: "/placeholder.svg"
+        imageUrl: "/placeholder.svg",
+        isFeatured: true
       },
       {
         id: "meat-dishes-05",
@@ -595,7 +602,8 @@ export const menuData: MenuCategory[] = [
         },
         price: 20.00,
         category: "fish-specialties",
-        imageUrl: "/placeholder.svg"
+        imageUrl: dish1,
+        isFeatured: true
       },
       {
         id: "fish-specialties-06",
@@ -717,7 +725,8 @@ export const menuData: MenuCategory[] = [
         },
         price: 12.50,
         category: "pasta-and-risotto",
-        imageUrl: "/placeholder.svg"
+        imageUrl: "/placeholder.svg",
+        isFeatured: true
       },
       {
         id: "risotto-01",
@@ -1233,7 +1242,8 @@ export const menuData: MenuCategory[] = [
         },
         price: 11.00,
         category: "pizza",
-        imageUrl: "/placeholder.svg"
+        imageUrl: dish2, // <-- Привязали конкретную картинку напрямую к блюду!
+        isFeatured: true
       },
       {
         id: "pizza-07",
@@ -1701,3 +1711,8 @@ export const menuData: MenuCategory[] = [
   },
   
 ];
+
+//  Экспортируем готовый отфильтрованный массив популярных блюд
+export const featuredDishes = menuData
+  .flatMap((category) => category.items)
+  .filter((item) => item.isFeatured === true);

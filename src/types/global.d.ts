@@ -11,6 +11,7 @@ interface MenuItem {
   price: number;
   category: string;
   imageUrl: string;
+  isFeatured?: boolean;
 }
 
 interface MenuCategory {
