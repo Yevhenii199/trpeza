@@ -115,6 +115,6 @@ The domain is connected through a registrar (Porkbun), and SSL certificates are 
 
 ## 📄 License
 
-This project is the private property of the Trpeza restaurant (Sutomore). Copying or distributing the source code without permission is prohibited.
+This project is the private property of the Trpeza restaurant (Sutomore). Copying or distributing the source code without permission is prohibited!
 
 Developed with ❤️ and user experience in mind for the Trpeza restaurant.
