@@ -12,9 +12,13 @@
     "closeMenu": "Close menu"
   },
   "home": {
+    "seo": {
+      "title": "Best Restaurant in Sutomore Trpeza | Balkan & Seafood Cuisine",
+      "description": "Looking for the top restaurants in Sutomore? Trpeza Restaurant offers authentic Balkan grill, fresh Adriatic seafood, and a refined wine selection in Montenegro."
+    },
     "hero": {
-      "title": "Restaurant ТРПЕЗА",
-      "subtitle": "Traditional Balkan cuisine, the freshest seafood, and a view that will capture your heart",
+      "title": "Trpeza Restaurant in Sutomore",
+      "subtitle": "Traditional Balkan cuisine, the freshest Mediterranean seafood, and an unforgettable view",
       "cta": "View Our Menu"
     },
     "featured": {
@@ -40,17 +44,17 @@
       "title": "What Our Guests Say",
       "items": [
         {
-          "quote": "An unforgettable evening. The flavors transported me straight to my grandmother's kitchen, yet with a modern twist I never expected.",
+          "quote": "An unforgettable evening. We were searching for the best places to eat in Sutomore and found this gem. The authentic flavors are incredible!",
           "author": "Marina S.",
           "role": "Food Critic"
         },
         {
-          "quote": "Simply the finest dining experience. Every dish is a masterpiece.",
+          "quote": "Simply the finest dining experience and the best restaurant in Sutomore, Montenegro. Every dish is a culinary masterpiece.",
           "author": "Aleksei P.",
           "role": "Regular Guest"
         },
         {
-          "quote": "The ambiance, the service, the food — everything was impeccable. We will return again and again.",
+          "quote": "The ambiance, the service, the food — everything was impeccable. Definitely one of the top Sutomore restaurants you must visit.",
           "author": "Sofia D.",
           "role": "Travel Blogger"
         }
@@ -61,12 +65,12 @@
     "subtitle": "A curated selection of sparkling, white, rosé, and red wines for the table"
   },
   "about": {
-    "title": "ТРПЕЗА",
+    "title": "Trpeza Restaurant in Sutomore",
     "subtitle": "Where tradition meets elegance",
     "story": {
       "title": "Our Story",
       "paragraphs": [
-        "Our philosophy is rooted in honesty and authenticity. We believe that a perfect dish doesn’t need complex special effects — it requires flawless ingredients. That is why we hand-pick farm-raised meats for our grill and buy fish and seafood directly from local fishermen. We carefully preserve traditional Balkan recipes, adding light modern touches so that every dish tells you a story of the sun, the mountains, and the Adriatic Sea."
+        "Our philosophy is rooted in honesty and authenticity. We believe that a perfect dish doesn’t need complex special effects — it requires flawless ingredients. That is why we hand-pick farm-raised meats for our grill and buy fish and seafood directly from local fishermen. We carefully preserve traditional Balkan recipes, standing out among other Sutomore restaurants by adding light modern touches so that every dish tells you a story of the sun, the mountains, and the Adriatic Sea."
       ]
     },
     "contact": {
@@ -90,7 +94,7 @@
     }
   },
   "footer": {
-    "about": "A refined dining experience blending tradition with modern culinary artistry. Every dish tells a story of passion and craft.",
+    "about": "A refined restaurant in Sutomore blending Balkan tradition with modern culinary artistry. Every dish tells a story of passion and craft.",
     "address": "Address",
     "addressValue": "Partizanski put 176, Sutomore 85355, Montenegro",
     "phone": "Phone",

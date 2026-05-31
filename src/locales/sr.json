@@ -12,9 +12,13 @@
     "closeMenu": "Zatvorite meni"
   },
   "home": {
+    "seo": {
+      "title": "Najbolji Restoran u Sutomoru Trpeza | Balkanska i Morska Kuhinja",
+      "description": "Tražite najbolje restorane u Sutomoru? Restoran Trpeza nudi autentični balkanski roštilj, svježe plodove mora i bogatu vinsku kartu na crnogorskom primorju."
+    },
     "hero": {
-      "title": "Restoran ТРПЕЗА",
-      "subtitle": "Tradicionalna balkanska kuhinja, свежи morski plodovi i pogled koji ostaje u srcu zauvek",
+      "title": "Restoran Trpeza u Sutomoru",
+      "subtitle": "Tradicionalna balkanska kuhinja, svježi morski plodovi i pogled koji ostaje u srcu zauvijek",
       "cta": "Pogledajte Meni"
     },
     "featured": {
@@ -29,28 +33,28 @@
     "dishes": {
       "dish1": {
         "name": "Balkanski Grill Tanjir",
-        "description": "Sočno meso sa roštilja uz zlatni krompir, sveže povrće i masline — bogat tanjir za pravo druženje."
+        "description": "Sočno meso sa roštilja uz zlatni krompir, svježe povrće i masline — bogat tanjir za pravo druženje."
       },
       "dish2": {
-        "name": "ТРПЕЗА Pizza Specijalitet",
-        "description": "Vazdušasto rumeno testo sa nežnim pršutom, svežim paradajzom i mirisnim zelenilom — italijanski akcenat uz balkansku toplinu."
+        "name": "Trpeza Pizza Specijalitet",
+        "description": "Vazdušasto rumeno tijesto sa nježnom pršutom, svježim paradajzom i mirisnim zelenilom — italijanski akcenat uz balkansku toplinu."
       }
     },
     "testimonials": {
       "title": "Šta Kažu Naši Gosti",
       "items": [
         {
-          "quote": "Nezaboravno veče. Ukusi su me preneli pravo u bakin kuhinju, ali sa modernim preokretom.",
+          "quote": "Nezaboravno veče. Tražili smo gdje jesti u Sutomoru i otkrili ovaj dragulj. Ukusi su me prenijeli pravo u bakinu kuhinju, ali sa modernim preokretom.",
           "author": "Marina S.",
           "role": "Kritičar hrane"
         },
         {
-          "quote": "Jednostavno najfinije iskustvo obedovanja. Svako jelo je remek-delo.",
+          "quote": "Jednostavno najfinije iskustvo objedovanja i najbolji restoran u Sutomoru. Svako jelo je pravo remek-djelo.",
           "author": "Aleksej P.",
           "role": "Redovni gost"
         },
         {
-          "quote": "Ambijent, usluga, hrana — sve je bilo besprekorno. Vraćaćemo se iznova.",
+          "quote": "Ambijent, usluga, hrana — sve je bilo besprekorno. Definitivno jedan od onih restorana u Sutomoru koje morate posjetiti.",
           "author": "Sofija D.",
           "role": "Travel bloger"
         }
@@ -61,16 +65,16 @@
     "subtitle": "Pažljivo odabrana ponuda pjenušavih, bijelih, rose i crvenih vina za vašu trpezu"
   },
   "about": {
-    "title": "ТРПЕЗА",
+    "title": "Restoran Trpeza u Sutomoru",
     "subtitle": "Gde tradicija susreće eleganciju",
     "story": {
       "title": "Naša Priča",
       "paragraphs": [
-        "U osnovi naše filozofije leže iskrenost i autentičnost. Vjerujemo da savršeno jelo ne zahtijeva komplikovane specijalne efekte — ono traži besprijekorne sastojke. Upravo zato lično biramo domaće meso sa farmi za naš roštilj, a ribu i plodove mora kupujemo direktno od lokalnih ribara. Pažljivo čuvamo tradicionalne balkanske recepte, dodajući im blage moderne akcente, kako bi vam svako jelo ispričalo priču o suncu, planinama i Jadranskom moru."
+        "U osnovi naše filozofije leže iskrenost i autentičnost. Vjerujemo da savršeno jelo ne zahtijeva komplikovane specijalne efekte — ono traži besprijekorne sastojke. Upravo zato lično biramo domaće meso sa farmi za naš roštilj, a ribu i plodove mora kupujemo direktno od lokalnih ribara. Pažljivo čuvamo tradicionalne balkanske recepte, izdvajajući se među ostalim restoranima u Sutomoru po tome što dodajemo blage moderne akcente, kako bi vam svako jelo ispričalo priču o suncu, planinama i Jadranskom moru."
       ]
     },
     "contact": {
-      "title": "Posetite Nas",
+      "title": "Posjetite Nas",
       "address": "Adresa",
       "addressValue": "Partizanski put 176, Sutomore 85355, Crna Gora",
       "phone": "Telefon",
@@ -79,18 +83,18 @@
       "emailValue": "brtuttobene@gmail.com"
     },
     "hours": {
-      "title": "Vremе Otvaranja",
-      "weekday": "Ponedeljak - Petak",
+      "title": "Vrijeme Otvaranja",
+      "weekday": "Ponedjeljak - Petak",
       "weekdayTime": "08:00 - 23:00",
       "saturday": "Subota",
       "saturdayTime": "08:00 - 23:00",
-      "sunday": "Nedelja",
+      "sunday": "Nedjelja",
       "sundayTime": "08:00 - 23:00",
       "closed": "Zatvoreno na velike praznike"
     }
   },
   "footer": {
-    "about": "Rafinirano iskustvo obedovanja koje spaja tradiciju sa modernom kulinarskom umetnošću. Svako jelo priča priču o strasti i zanatu.",
+    "about": "Rafinirano iskustvo objedovanja koje spaja balkansku tradiciju sa modernom kulinarskom umjetnošću. Svako jelo priča priču o strasti i zanatu.",
     "address": "Adresa",
     "addressValue": "Partizanski put 176, Sutomore 85355, Crna Gora",
     "phone": "Telefon",
