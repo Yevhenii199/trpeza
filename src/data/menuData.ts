@@ -23,7 +23,7 @@ export const menuData: MenuCategory[] = [
           sr: "Poširana jaja u gustom sosu od pečenih paprika i paradajza, sa mrvljenim sirom i hrskavim komadima domaće kobasice i slanine (350g)",
           ru: "Яйца пашот в густом соусе из печёного перца и томатов, с измельчённым сыром, кусочками домашней колбасы и хрустящим беконом (350г)"
         },
-        price: 6.80,
+        price: 6.90,
         category: "breakfast",
         imageUrl: "/placeholder.svg"
       },
@@ -39,7 +39,7 @@ export const menuData: MenuCategory[] = [
           sr: "Poširana jaja na prepečenom domaćem hlebu, sa biftekom i hrskavom slaninom, preliveno holandez sosom sa dodatkom domaćih začina (350g)",
           ru: "Яйца пашот на поджаренном домашнем хлебе с бифштексом и хрустящим беконом под соусом голландез с домашними травами (350г)"
         },
-        price: 6.80,
+        price: 7.30,
         category: "breakfast",
         imageUrl: "/placeholder.svg"
       },
@@ -55,7 +55,7 @@ export const menuData: MenuCategory[] = [
           sr: "Pjenasti omlet od domaćih jaja sa pršutom, šunkom ili slaninom po vašoj želji, sirom i grilovanim povrćem (350g)",
           ru: "Пышный омлет из домашних яиц с пршутом, ветчиной или беконом на ваш выбор, сыром и овощами гриль (350г)"
         },
-        price: 5.70,
+        price: 6.30,
         category: "breakfast",
         imageUrl: "/placeholder.svg"
       },
@@ -71,7 +71,7 @@ export const menuData: MenuCategory[] = [
           sr: "Domaća jaja 'na oko' spremana na maslinovom ulju, poslužena sa domaćim sirom, ajvarom i dimljenom kobasicom (400g)",
           ru: "Яичница-глазунья на оливковом масле, подаётся с домашним сыром, айваром и копчёной колбасой (400г)"
         },
-        price: 6.00,
+        price: 7.00,
         category: "breakfast",
         imageUrl: "/placeholder.svg"
       },
@@ -87,14 +87,14 @@ export const menuData: MenuCategory[] = [
           sr: "Domaća jaja spremana na maslinovom ulju, poslužena sa svježom salatom, slaninom i sirom, kajmakom (350g)",
           ru: "Домашние яйца на оливковом масле, подаются со свежим салатом, беконом, сыром и каймаком (350г)"
         },
-        price: 5.80,
+        price: 6.00,
         category: "breakfast",
         imageUrl: "/placeholder.svg"
       },
       {
         id: "breakfast-06",
         name: {
-          en: "Ham Sandwich",
+          en: "Sandwich with Ham",
           sr: "Sendvič sa šunkom",
           ru: "Сэндвич с ветчиной"
         },
@@ -103,7 +103,7 @@ export const menuData: MenuCategory[] = [
           sr: "Hrskava domaća lepinja, sir, šunka, zelena salata, kečap-majo sos, čips krompir (400g)",
           ru: "Хрустящая домашняя лепёшка, сыр, ветчина, салат, кетчуп-майонез, картофельные чипсы (400г)"
         },
-        price: 5.20,
+        price: 5.80,
         category: "breakfast",
         imageUrl: "/placeholder.svg"
       },
@@ -119,7 +119,7 @@ export const menuData: MenuCategory[] = [
           sr: "Hrskava domaća lepinja, sir, kulen, ljuta paprika, kiseli krastavac, ajvar, čips krompir (400g)",
           ru: "Хрустящая домашняя лепёшка, сыр, кулен (острая колбаса), острый перец, солёные огурцы, айвар, картофельные чипсы (400г)"
         },
-        price: 6.00,
+        price: 6.30,
         category: "breakfast",
         imageUrl: "/placeholder.svg"
       },
@@ -135,7 +135,7 @@ export const menuData: MenuCategory[] = [
           sr: "Hrskava domaća lepinja, sir, pršuta, paradajz, zelena salata, kajmak, čips krompir (400g)",
           ru: "Хрустящая домашняя лепёшка, сыр, пршут, томат, салат, каймак, картофельные чипсы (400г)"
         },
-        price: 6.20,
+        price: 6.90,
         category: "breakfast",
         imageUrl: "/placeholder.svg"
       },
@@ -151,7 +151,7 @@ export const menuData: MenuCategory[] = [
           sr: "Hrskava domaća lepinja, sir, grilovana piletina, kiseli krastavac, urnebes, majonez, pavlaka, čips krompir (400g)",
           ru: "Хрустящая домашняя лепёшка, сыр, курица на гриле, солёные огурцы, урнебес, майонез, сметана, картофельные чипсы (400г)"
         },
-        price: 7.00,
+        price: 7.50,
         category: "breakfast",
         imageUrl: "/placeholder.svg"
       },
@@ -167,7 +167,7 @@ export const menuData: MenuCategory[] = [
           sr: "Hrskava domaća lepinja, sir, biftek, grilovani luk, zelena salata, paradajz, senf, majonez (500g)",
           ru: "Хрустящая домашняя лепёшка, сыр, бифштекс, лук на гриле, салат, томат, горчица, майонез (500г)"
         },
-        price: 7.50,
+        price: 8.30,
         category: "breakfast",
         imageUrl: "/placeholder.svg"
       },
@@ -206,160 +206,6 @@ export const menuData: MenuCategory[] = [
     ]
   },
   {
-    id: "appetizers",
-    name: {
-      en: "Appetizers",
-      sr: "Predjela",
-      ru: "Закуски"
-    },
-    items: [
-      {
-        id: "appetizers-01",
-        name: {
-          en: "Mozzarella Bruschetta",
-          sr: "Brusketi sa mocarelom",
-          ru: "Брускетта с моцареллой"
-        },
-        description: {
-          en: "Toasted bread with fresh mozzarella and herbs",
-          sr: "Tostirani hljeb sa svježom mocarelom i začinskim biljem",
-          ru: "Тосты со свежей моцареллой и зеленью"
-        },
-        price: 5.00,
-        category: "appetizers",
-        imageUrl: "/placeholder.svg"
-      },
-      {
-        id: "appetizers-02",
-        name: {
-          en: "Prosciutto Bruschetta",
-          sr: "Brusketi sa pršutom",
-          ru: "Брускетта с пршутом"
-        },
-        description: {
-          en: "Toasted bread with traditional smoked prosciutto",
-          sr: "Tostirani hljeb sa domaćim pršutom",
-          ru: "Тосты с традиционным пршутом"
-        },
-        price: 6.50,
-        category: "appetizers",
-        imageUrl: "/placeholder.svg"
-      },
-      {
-        id: "appetizers-03",
-        name: {
-          en: "Shrimp Bruschetta",
-          sr: "Brusketi sa gamborima",
-          ru: "Брускетта с креветками"
-        },
-        description: {
-          en: "Toasted bread with sautéed shrimps",
-          sr: "Tostirani hljeb sa dinstanim gamborima",
-          ru: "Тосты с обжаренными креветками"
-        },
-        price: 9.00,
-        category: "appetizers",
-        imageUrl: "/placeholder.svg"
-      },
-      {
-        id: "appetizers-04",
-        name: {
-          en: "Platter for Two",
-          sr: "Трпеза pjat za dvije osobe",
-          ru: "Ассорти на двоих"
-        },
-        description: {
-          en: "A rich selection of local delicacies for two people",
-          sr: "Bogata selekcija domaćih delicija za dvije osobe",
-          ru: "Богатый выбор местных деликатесов на двоих"
-        },
-        price: 15.00,
-        category: "appetizers",
-        imageUrl: "/placeholder.svg"
-      },
-      {
-        id: "appetizers-05",
-        name: {
-          en: "Homemade Cow Cheese",
-          sr: "Domaći kravlji sir",
-          ru: "Домашний коровий сыр"
-        },
-        description: {
-          en: "Traditional local cow cheese",
-          sr: "Tradicionalni domaći kravlji sir",
-          ru: "Традиционный местный коровий сыр"
-        },
-        price: 5.00,
-        category: "appetizers",
-        imageUrl: "/placeholder.svg"
-      },
-      {
-        id: "appetizers-06",
-        name: {
-          en: "Homemade Goat Cheese",
-          sr: "Domaći koziji sir",
-          ru: "Домашний козий сыр"
-        },
-        description: {
-          en: "Locally sourced traditional goat cheese",
-          sr: "Domaći koziji sir vrhunskog kvaliteta",
-          ru: "Местный домашний козий сыр"
-        },
-        price: 8.00,
-        category: "appetizers",
-        imageUrl: "/placeholder.svg"
-      },
-      {
-        id: "appetizers-07",
-        name: {
-          en: "Grilled Goat Cheese",
-          sr: "Grilovani koziji sir",
-          ru: "Козий сыр на гриле"
-        },
-        description: {
-          en: "Warm grilled goat cheese with herbs",
-          sr: "Topli grilovani koziji sir sa začinima",
-          ru: "Тёплый козий сыр на гриле со специями"
-        },
-        price: 9.00,
-        category: "appetizers",
-        imageUrl: "/placeholder.svg"
-      },
-      {
-        id: "appetizers-08",
-        name: {
-          en: "Cheese Mix",
-          sr: "Mix sireva",
-          ru: "Сырное ассорти"
-        },
-        description: {
-          en: "Selection of various local and international cheeses",
-          sr: "Selekcija različitih vrsta sireva",
-          ru: "Ассорти из различных видов сыра"
-        },
-        price: 12.00,
-        category: "appetizers",
-        imageUrl: "/placeholder.svg"
-      },
-      {
-        id: "appetizers-09",
-        name: {
-          en: "Baked Eggplant with Cheese",
-          sr: "Zapečeni patlidžan sa sirom",
-          ru: "Запечённый баклажан с сыром"
-        },
-        description: {
-          en: "Oven-baked eggplant topped with melted cheese",
-          sr: "Patlidžan pečen u rerni sa topljenim sirom",
-          ru: "Баклажан, запечённый в духовке с сыром"
-        },
-        price: 7.00,
-        category: "appetizers",
-        imageUrl: "/placeholder.svg"
-      }
-    ]
-  },
-  {
     id: "meat-dishes",
     name: {
       en: "Meat Dishes",
@@ -395,7 +241,7 @@ export const menuData: MenuCategory[] = [
           sr: "Juneća pljeskavica punjena dimljenim sirom umotana u pizza tijesto, poslužena sa pikantnim urnebesom, ajvarom i domaćim kajmakom (450g)",
           ru: "Котлета из говядины с начинкой из копчёного сыра, завёрнутая в тесто для пиццы. Подаётся с пикантным урнебесом, айваром и домашним каймаком (450г)"
         },
-        price: 10.00,
+        price: 11.00,
         category: "meat-dishes",
         imageUrl: "/placeholder.svg",
         isFeatured: true
@@ -429,7 +275,7 @@ export const menuData: MenuCategory[] = [
           sr: "Svinjska rebarca marinirana u BBQ sosu, poslužena sa krompirom i salatom. Savršeno za ljubitelje slatko-slanih ukusa (500g)",
           ru: "Свиные рёбрышки, маринованные в соусе барбекю, подаются с картофелем и салатом. Идеально для любителей сладко-солёных вкусов (500г)"
         },
-        price: 16.00,
+        price: 17.00,
         category: "meat-dishes",
         imageUrl: "/placeholder.svg",
         isFeatured: true
@@ -444,9 +290,9 @@ export const menuData: MenuCategory[] = [
         description: {
           en: "Juicy grilled chicken fillet served with potato chips and salad (400g)",
           sr: "Sočni pileći file na roštilju serviran uz čips krompir i salatu (400g)",
-          ru: "Сочное куриное филе на гриле, подаётся с картофельными чипсами и салатом (400г)"
+          ru: "Сочное куриное филе на гриле, подаётся с картофелем и салатом (400г)"
         },
-        price: 7.00,
+        price: 7.50,
         category: "meat-dishes",
         imageUrl: "/placeholder.svg"
       },
@@ -478,7 +324,7 @@ export const menuData: MenuCategory[] = [
           sr: "Pileća krilca marinirana u Mr. Jack blagoj marinadi i panirano u hrskavoj American style chicken panadi (500g)",
           ru: "Куриные крылышки, маринованные в мягком маринаде Mr. Jack, в хрустящей панировке в американском стиле (500г)"
         },
-        price: 9.30,
+        price: 8.30,
         category: "meat-dishes",
         imageUrl: "/placeholder.svg"
       },
@@ -494,7 +340,7 @@ export const menuData: MenuCategory[] = [
           sr: "Mlada teleća džigerica spremana na žaru preliveno domaćim maslinovim uljem sa bijelim lukom (400g)",
           ru: "Молодая телячья печень, приготовленная на гриле, политая домашним оливковым маслом с чесноком (400г)"
         },
-        price: 10.00,
+        price: 12.00,
         category: "meat-dishes",
         imageUrl: "/placeholder.svg"
       },
@@ -510,7 +356,7 @@ export const menuData: MenuCategory[] = [
           sr: "Savršeno mekan i ukusan teleći biftek spreman na puteru, maslinovom ulju i našim tajnim začinima. Ovo jelo svrstava u sami vrh naše ponude. Serviran je uz grilovano povrće i pečeni krompir (400g)",
           ru: "Идеально нежный и вкусный стейк из телятины, приготовленный на сливочном и оливковом масле с нашими секретными специями. Блюдо топ-уровня в нашем меню. Подаётся с овощами гриль и запечённым картофелем (400г)"
         },
-        price: 22.00,
+        price: 23.00,
         category: "meat-dishes",
         imageUrl: "/placeholder.svg"
       },
@@ -536,7 +382,7 @@ export const menuData: MenuCategory[] = [
           sr: "Svježa riba na roštilju poslužena sa krompirom i grilovanim povrćem (500g)",
           ru: "Свежая рыба на гриле, подаётся с картофелем и овощами гриль (500г)"
         },
-        price: 17.50,
+        price: 18.00,
         category: "fish-specialties",
         imageUrl: "/placeholder.svg"
       },
@@ -552,7 +398,7 @@ export const menuData: MenuCategory[] = [
           sr: "Svježa riba na roštilju poslužena sa krompirom i grilovanim povrćem (500g)",
           ru: "Свежая рыба на гриле, подаётся с картофелем и овощами гриль (500г)"
         },
-        price: 17.50,
+        price: 18.00,
         category: "fish-specialties",
         imageUrl: "/placeholder.svg"
       },
@@ -568,7 +414,7 @@ export const menuData: MenuCategory[] = [
           sr: "Posebno birane, savršeno mekane i ukusne lignje na žaru prelivene maslinovim domaćim uljem sa bijelim lukom i peršunom, poslužene uz krompir i grilovano povrće (400g)",
           ru: "Специально отобранные, идеально нежные и вкусные кальмары на гриле, политые домашним оливковым маслом с чесноком и петрушкой. Подаются с картофелем и овощами гриль (400г)"
         },
-        price: 15.80,
+        price: 16.30,
         category: "fish-specialties",
         imageUrl: "/placeholder.svg"
       },
@@ -584,7 +430,7 @@ export const menuData: MenuCategory[] = [
           sr: "Očišćeni gambori spremani u gustom sosu od sjeckanog paradajza sa bijelim vinom i našom kombinacijom začina (350g)",
           ru: "Очищенные креветки, приготовленные в густом соусе из измельчённых томатов с белым вином и нашей фирменной смесью специй (350г)"
         },
-        price: 16.00,
+        price: 18.00,
         category: "fish-specialties",
         imageUrl: "/placeholder.svg"
       },
@@ -617,7 +463,7 @@ export const menuData: MenuCategory[] = [
           sr: "Najkvalitetniji dio tune, spreman na jakoj vatri, sočan, mekan, preliven domaćom marinadom, serviran sa krompirom i grilovanim povrćem. Prava simfonija ukusa (450g)",
           ru: "Самая качественная часть тунца, приготовленная на сильном огне, сочная, нежная, политая домашним маринадом. Подаётся с картофелем и овощами гриль. Настоящая симфония вкуса (450г)"
         },
-        price: 19.00,
+        price: 20.00,
         category: "fish-specialties",
         imageUrl: "/placeholder.svg"
       },
@@ -659,7 +505,7 @@ export const menuData: MenuCategory[] = [
           sr: "Domaće taljatele sa kombinacijom povrća spremane u paradajz sosu (350g)",
           ru: "Домашние тальятелле с овощным ассорти в томатном соусе (350г)"
         },
-        price: 9.20,
+        price: 8.00,
         category: "pasta-and-risotto",
         imageUrl: "/placeholder.svg"
       },
@@ -691,7 +537,7 @@ export const menuData: MenuCategory[] = [
           sr: "Domaće taljatele u kombinaciji sa morskim plodovima, savršen spoj (350g)",
           ru: "Домашние тальятелле с морепродуктами — идеальное сочетание (350г)"
         },
-        price: 13.00,
+        price: 14.00,
         category: "pasta-and-risotto",
         imageUrl: "/placeholder.svg"
       },
@@ -707,7 +553,7 @@ export const menuData: MenuCategory[] = [
           sr: "Pene u kremastom sosu pripremljenom od četiri vrste kvalitetnih sireva (350g)",
           ru: "Пенне в кремовом соусе из четырёх видов качественного сыра (350г)"
         },
-        price: 8.50,
+        price: 8.70,
         category: "pasta-and-risotto",
         imageUrl: "/placeholder.svg"
       },
@@ -723,7 +569,7 @@ export const menuData: MenuCategory[] = [
           sr: "Domaća pasta u kremastom sosu pripremljenom dinstanjem bijelog luka, sušene rajčice, pečuraka uz dodatak bijelog vina neutralne pavlake i parmezana (350g)",
           ru: "Домашняя паста в кремовом соусе из тушёного белого лука, вяленых томатов и грибов с добавлением белого вина, сливок и пармезана (350г)"
         },
-        price: 12.50,
+        price: 13.00,
         category: "pasta-and-risotto",
         imageUrl: "/placeholder.svg",
         isFeatured: true
@@ -740,7 +586,7 @@ export const menuData: MenuCategory[] = [
           sr: "Riža spremana u paradajz sosu sa kombinacijom povrća (350g)",
           ru: "Рис в томатном соусе с овощным ассорти (350г)"
         },
-        price: 9.00,
+        price: 7.60,
         category: "pasta-and-risotto",
         imageUrl: "/placeholder.svg"
       },
@@ -772,7 +618,7 @@ export const menuData: MenuCategory[] = [
           sr: "Riža u crvenom sosu od paradajza sa kombinacijom svježih morskih plodova (350g)",
           ru: "Рис в красном томатном соусе со свежими морепродуктами (350г)"
         },
-        price: 13.00,
+        price: 14.00,
         category: "pasta-and-risotto",
         imageUrl: "/placeholder.svg"
       },
@@ -788,7 +634,7 @@ export const menuData: MenuCategory[] = [
           sr: "Riža spremana u bijelom vinu i crnilu od sipe uz dodatak komada lignji. Savršen spoj i naša preporuka (350g)",
           ru: "Рис на белом вине с чернилами каракатицы и кусочками кальмаров. Идеальное сочетание и наша рекомендация (350г)"
         },
-        price: 10.00,
+        price: 11.00,
         category: "pasta-and-risotto",
         imageUrl: "/placeholder.svg"
       },
@@ -856,7 +702,7 @@ export const menuData: MenuCategory[] = [
           sr: "Tradicionalna grčka salata (350g)",
           ru: "Традиционный греческий салат (350г)"
         },
-        price: 5.00,
+        price: 5.50,
         category: "meal-salads",
         imageUrl: "/placeholder.svg"
       },
@@ -888,7 +734,7 @@ export const menuData: MenuCategory[] = [
           sr: "Klasična Cezar salata sa piletinom (350g)",
           ru: "Классический салат Цезарь с курицей (350г)"
         },
-        price: 7.50,
+        price: 8.00,
         category: "meal-salads",
         imageUrl: "/placeholder.svg"
       },
@@ -936,7 +782,7 @@ export const menuData: MenuCategory[] = [
           sr: "Osvježavajuća salata sa komadima hobotnice (300g)",
           ru: "Освежающий салат с кусочками осьминога (300г)"
         },
-        price: 18.00,
+        price: 11.00,
         category: "meal-salads",
         imageUrl: "/placeholder.svg"
       }
@@ -994,7 +840,7 @@ export const menuData: MenuCategory[] = [
           ru: "Шопский салат"
         },
         description: { en: "Classic Shopska salad with cheese", sr: "Klasična šopska salata sa sirom", ru: "Классический шопский салат с сыром" },
-        price: 4.00,
+        price: 4.50,
         category: "classic-salads",
         imageUrl: "/placeholder.svg"
       },
@@ -1006,7 +852,7 @@ export const menuData: MenuCategory[] = [
           ru: "Салат микс"
         },
         description: { en: "Combination of seasonal salads", sr: "Kombinacija sezonskih salata", ru: "Смесь сезонных салатов" },
-        price: 6.00,
+        price: 6.50,
         category: "classic-salads",
         imageUrl: "/placeholder.svg"
       },
@@ -1061,6 +907,160 @@ export const menuData: MenuCategory[] = [
     ]
   },
   {
+    id: "appetizers",
+    name: {
+      en: "Appetizers",
+      sr: "Predjela",
+      ru: "Закуски"
+    },
+    items: [
+      {
+        id: "appetizers-01",
+        name: {
+          en: "Mozzarella Bruschetta",
+          sr: "Brusketi sa mocarelom",
+          ru: "Брускетта с моцареллой"
+        },
+        description: {
+          en: "Toasted bread with fresh mozzarella and herbs",
+          sr: "Tostirani hljeb sa svježom mocarelom i začinskim biljem",
+          ru: "Тосты со свежей моцареллой и зеленью"
+        },
+        price: 5.00,
+        category: "appetizers",
+        imageUrl: "/placeholder.svg"
+      },
+      {
+        id: "appetizers-02",
+        name: {
+          en: "Prosciutto Bruschetta",
+          sr: "Brusketi sa pršutom",
+          ru: "Брускетта с пршутом"
+        },
+        description: {
+          en: "Toasted bread with traditional smoked prosciutto",
+          sr: "Tostirani hljeb sa domaćim pršutom",
+          ru: "Тосты с традиционным пршутом"
+        },
+        price: 6.50,
+        category: "appetizers",
+        imageUrl: "/placeholder.svg"
+      },
+      {
+        id: "appetizers-03",
+        name: {
+          en: "Shrimp Bruschetta",
+          sr: "Brusketi sa gamborima",
+          ru: "Брускетта с креветками"
+        },
+        description: {
+          en: "Toasted bread with sautéed shrimps",
+          sr: "Tostirani hljeb sa dinstanim gamborima",
+          ru: "Тосты с обжаренными креветками"
+        },
+        price: 10.00,
+        category: "appetizers",
+        imageUrl: "/placeholder.svg"
+      },
+      {
+        id: "appetizers-04",
+        name: {
+          en: "Platter for Two",
+          sr: "Трпеза pjat za dvije osobe",
+          ru: "Ассорти на двоих"
+        },
+        description: {
+          en: "A rich selection of local delicacies for two people",
+          sr: "Bogata selekcija domaćih delicija za dvije osobe",
+          ru: "Богатый выбор местных деликатесов на двоих"
+        },
+        price: 16.00,
+        category: "appetizers",
+        imageUrl: "/placeholder.svg"
+      },
+      {
+        id: "appetizers-05",
+        name: {
+          en: "Homemade Cow Cheese",
+          sr: "Domaći kravlji sir",
+          ru: "Домашний коровий сыр"
+        },
+        description: {
+          en: "Traditional local cow cheese",
+          sr: "Tradicionalni domaći kravlji sir",
+          ru: "Традиционный местный коровий сыр"
+        },
+        price: 6.00,
+        category: "appetizers",
+        imageUrl: "/placeholder.svg"
+      },
+      {
+        id: "appetizers-06",
+        name: {
+          en: "Homemade Goat Cheese",
+          sr: "Domaći koziji sir",
+          ru: "Домашний козий сыр"
+        },
+        description: {
+          en: "Locally sourced traditional goat cheese",
+          sr: "Domaći koziji sir vrhunskog kvaliteta",
+          ru: "Местный домашний козий сыр"
+        },
+        price: 9.00,
+        category: "appetizers",
+        imageUrl: "/placeholder.svg"
+      },
+      {
+        id: "appetizers-07",
+        name: {
+          en: "Grilled Goat Cheese",
+          sr: "Grilovani koziji sir",
+          ru: "Козий сыр на гриле"
+        },
+        description: {
+          en: "Warm grilled goat cheese with herbs",
+          sr: "Topli grilovani koziji sir sa začinima",
+          ru: "Тёплый козий сыр на гриле со специями"
+        },
+        price: 10.00,
+        category: "appetizers",
+        imageUrl: "/placeholder.svg"
+      },
+      {
+        id: "appetizers-08",
+        name: {
+          en: "Cheese Mix",
+          sr: "Mix sireva",
+          ru: "Сырное ассорти"
+        },
+        description: {
+          en: "Selection of various local and international cheeses",
+          sr: "Selekcija različitih vrsta sireva",
+          ru: "Ассорти из различных видов сыра"
+        },
+        price: 12.00,
+        category: "appetizers",
+        imageUrl: "/placeholder.svg"
+      },
+      {
+        id: "appetizers-09",
+        name: {
+          en: "Baked Eggplant with Cheese",
+          sr: "Zapečeni patlidžan sa sirom",
+          ru: "Запечённый баклажан с сыром"
+        },
+        description: {
+          en: "Oven-baked eggplant topped with melted cheese",
+          sr: "Patlidžan pečen u rerni sa topljenim sirom",
+          ru: "Баклажан, запечённый в духовке с сыром"
+        },
+        price: 8.00,
+        category: "appetizers",
+        imageUrl: "/placeholder.svg"
+      }
+    ]
+  },
+  {
     id: "side-dishes",
     name: {
       en: "Side Dishes",
@@ -1076,7 +1076,7 @@ export const menuData: MenuCategory[] = [
           ru: "Урнебес"
         },
         description: { en: "Spicy cheese spread", sr: "Pikantni namaz od sira", ru: "Острая сырная закуска" },
-        price: 1.50,
+        price: 2.00,
         category: "side-dishes",
         imageUrl: "/placeholder.svg"
       },
@@ -1100,7 +1100,7 @@ export const menuData: MenuCategory[] = [
           ru: "Айвар"
         },
         description: { en: "Roasted pepper spread", sr: "Namaz od pečene paprike", ru: "Икра из печёного перца" },
-        price: 1.50,
+        price: 2.00,
         category: "side-dishes",
         imageUrl: "/placeholder.svg"
       },
@@ -1192,7 +1192,7 @@ export const menuData: MenuCategory[] = [
           sr: "Pelat, žuti sir, mocarela, gorgonzola, parmezan",
           ru: "Томатный соус, жёлтый сыр, моцарелла, горгонзола, пармезан"
         },
-        price: 9.00,
+        price: 9.50,
         category: "pizza",
         imageUrl: "/placeholder.svg"
       },
@@ -1253,7 +1253,7 @@ export const menuData: MenuCategory[] = [
           sr: "Pelat, sir, šunka, kulen, jaje, pečurke, masline, origano",
           ru: "Томатный соус, сыр, ветчина, кулен, яйцо, грибы, оливки, орегано"
         },
-        price: 9.00,
+        price: 11.00,
         category: "pizza",
         imageUrl: "/placeholder.svg"
       },
@@ -1277,7 +1277,7 @@ export const menuData: MenuCategory[] = [
           sr: "Pelat, sir, šunka, kulen, pečurke, pavlaka, parmezan, origano",
           ru: "Томатный соус, сыр, ветчина, кулен, грибы, сметана, пармезан, орегано"
         },
-        price: 10.00,
+        price: 9.50,
         category: "pizza",
         imageUrl: "/placeholder.svg"
       },
@@ -1289,7 +1289,7 @@ export const menuData: MenuCategory[] = [
           sr: "Pelat, sir, gambori, parmezan, marinada, masline, origano",
           ru: "Томатный соус, сыр, креветки, пармезан, маринад, оливки, орегано"
         },
-        price: 12.00,
+        price: 12.50,
         category: "pizza",
         imageUrl: "/placeholder.svg"
       },
@@ -1301,7 +1301,7 @@ export const menuData: MenuCategory[] = [
           sr: "Pelat, sir, morski plodovi, marinada, masline, origano",
           ru: "Томатный соус, сыр, морепродукты, маринад, оливки, орегано"
         },
-        price: 13.00,
+        price: 13.50,
         category: "pizza",
         imageUrl: "/placeholder.svg"
       }
@@ -1319,7 +1319,7 @@ export const menuData: MenuCategory[] = [
         id: "desserts-01",
         name: { en: "Pancake Nutella", sr: "Palačinke Nutela", ru: "Блинчики с Нутеллой" },
         description: { en: "Pancakes with Nutella filling", sr: "Palačinke sa Nutelom", ru: "Блинчики с Нутеллой" },
-        price: 4.50,
+        price: 5.00,
         category: "desserts",
         imageUrl: "/placeholder.svg"
       },
@@ -1327,7 +1327,7 @@ export const menuData: MenuCategory[] = [
         id: "desserts-02",
         name: { en: "Pancake Bueno", sr: "Palačinke Bueno", ru: "Блинчики Буэно" },
         description: { en: "Pancakes with Bueno cream", sr: "Palačinke sa Bueno kremom", ru: "Блинчики с кремом Буэно" },
-        price: 5.50,
+        price: 6.50,
         category: "desserts",
         imageUrl: "/placeholder.svg"
       },
@@ -1335,7 +1335,7 @@ export const menuData: MenuCategory[] = [
         id: "desserts-03",
         name: { en: "Pancake Pistachio", sr: "Palačinke Pistachio", ru: "Блинчики с фисташками" },
         description: { en: "Pancakes with pistachio cream", sr: "Palačinke sa kremom od pistaća", ru: "Блинчики с фисташковым кремом" },
-        price: 7.00,
+        price: 7.50,
         category: "desserts",
         imageUrl: "/placeholder.svg"
       },
@@ -1351,7 +1351,7 @@ export const menuData: MenuCategory[] = [
         id: "desserts-05",
         name: { en: "Trileçe", sr: "Trileće", ru: "Трилече" },
         description: { en: "Traditional milk cake", sr: "Tradicionalni kolač sa tri vrste mlijeka", ru: "Традиционный торт на основе трёх видов молока" },
-        price: 3.50,
+        price: 4.00,
         category: "desserts",
         imageUrl: "/placeholder.svg"
       },
@@ -1417,7 +1417,7 @@ export const menuData: MenuCategory[] = [
           sr: "Espresso sa toplim mlijekom i bogatom pjenom", 
           ru: "Эспрессо с горячим молоком и пышной пеной" 
         },
-        price: 2.30,
+        price: 2.20,
         category: "kafe",
         imageUrl: "/placeholder.svg"
       },
@@ -1471,7 +1471,7 @@ export const menuData: MenuCategory[] = [
         id: "fresh-juices-01",
         name: { en: "Lemonade", sr: "Limunada", ru: "Лимонад" },
         description: { en: "Fresh squeezed lemon", sr: "Cijeđeni limun", ru: "Свежевыжатый лимон" },
-        price: 2.80,
+        price: 2.00,
         category: "fresh-juices",
         imageUrl: "/placeholder.svg"
       },
@@ -1479,7 +1479,7 @@ export const menuData: MenuCategory[] = [
         id: "fresh-juices-02",
         name: { en: "Fresh Orange Juice", sr: "Cijeđena pomorandža", ru: "Свежевыжатый апельсиновый сок" },
         description: { en: "Fresh squeezed orange", sr: "Cijeđena narandža", ru: "Свежевыжатый апельсин" },
-        price: 3.50,
+        price: 4.00,
         category: "fresh-juices",
         imageUrl: "/placeholder.svg"
       },
@@ -1487,7 +1487,7 @@ export const menuData: MenuCategory[] = [
         id: "fresh-juices-03",
         name: { en: "Fresh Grapefruit Juice", sr: "Grejp", ru: "Свежевыжатый грейпфрут" },
         description: { en: "Fresh squeezed grapefruit", sr: "Cijeđeni grejpfrut", ru: "Свежевыжатый грейпфрут" },
-        price: 3.50,
+        price: 4.00,
         category: "fresh-juices",
         imageUrl: "/placeholder.svg"
       },
@@ -1495,7 +1495,7 @@ export const menuData: MenuCategory[] = [
         id: "fresh-juices-04",
         name: { en: "Squeezed Mix", sr: "Cijeđeni mix", ru: "Свежевыжатый микс" },
         description: { en: "Mix of fresh squeezed fruits", sr: "Miks cijeđenog voća", ru: "Смесь свежевыжатых фруктов" },
-        price: 4.00,
+        price: 5.00,
         category: "fresh-juices",
         imageUrl: "/placeholder.svg"
       },
@@ -1529,7 +1529,7 @@ export const menuData: MenuCategory[] = [
         id: "soft-drinks-01",
         name: { en: "Coca Cola", sr: "Coca Cola", ru: "Кока-Кола" },
         description: { en: "0.25l", sr: "0.25l", ru: "0.25л" },
-        price: 2.30,
+        price: 2.50,
         category: "soft-drinks",
         imageUrl: "/placeholder.svg"
       },
@@ -1537,7 +1537,7 @@ export const menuData: MenuCategory[] = [
         id: "soft-drinks-02",
         name: { en: "Coca Cola Zero", sr: "Coca Cola Zero", ru: "Кока-Кола Зеро" },
         description: { en: "0.25l", sr: "0.25l", ru: "0.25л" },
-        price: 2.30,
+        price: 2.50,
         category: "soft-drinks",
         imageUrl: "/placeholder.svg"
       },
@@ -1545,7 +1545,7 @@ export const menuData: MenuCategory[] = [
         id: "soft-drinks-03",
         name: { en: "Fanta", sr: "Fanta", ru: "Фанта" },
         description: { en: "0.25l", sr: "0.25l", ru: "0.25л" },
-        price: 2.30,
+        price: 2.50,
         category: "soft-drinks",
         imageUrl: "/placeholder.svg"
       },
@@ -1553,7 +1553,7 @@ export const menuData: MenuCategory[] = [
         id: "soft-drinks-04",
         name: { en: "Bitter Lemon", sr: "Bitter Lemon", ru: "Биттер Лемон" },
         description: { en: "0.25l", sr: "0.25l", ru: "0.25л" },
-        price: 2.30,
+        price: 2.50,
         category: "soft-drinks",
         imageUrl: "/placeholder.svg"
       },
@@ -1561,7 +1561,7 @@ export const menuData: MenuCategory[] = [
         id: "soft-drinks-05",
         name: { en: "Tonic", sr: "Tonic", ru: "Тоник" },
         description: { en: "0.25l", sr: "0.25l", ru: "0.25л" },
-        price: 2.30,
+        price: 2.50,
         category: "soft-drinks",
         imageUrl: "/placeholder.svg"
       },
@@ -1569,7 +1569,7 @@ export const menuData: MenuCategory[] = [
         id: "soft-drinks-06",
         name: { en: "Cockta", sr: "Cockta", ru: "Кокта" },
         description: { en: "0.25l", sr: "0.25l", ru: "0.25л" },
-        price: 2.30,
+        price: 2.50,
         category: "soft-drinks",
         imageUrl: "/placeholder.svg"
       },
@@ -1585,7 +1585,7 @@ export const menuData: MenuCategory[] = [
         id: "soft-drinks-08",
         name: { en: "Apple Juice", sr: "Jabuka", ru: "Яблочный сок" },
         description: { en: "Fruit juice (0.2l)", sr: "Voćni sok (0.2l)", ru: "Фруктовый сок (0.2л)" },
-        price: 2.30,
+        price: 2.50,
         category: "soft-drinks",
         imageUrl: "/placeholder.svg"
       },
@@ -1593,7 +1593,7 @@ export const menuData: MenuCategory[] = [
         id: "soft-drinks-09",
         name: { en: "Strawberry Juice", sr: "Jagoda", ru: "Клубничный сок" },
         description: { en: "Fruit juice (0.2l)", sr: "Voćni sok (0.2l)", ru: "Фруктовый сок (0.2л)" },
-        price: 2.30,
+        price: 2.50,
         category: "soft-drinks",
         imageUrl: "/placeholder.svg"
       },
@@ -1601,7 +1601,7 @@ export const menuData: MenuCategory[] = [
         id: "soft-drinks-10",
         name: { en: "Peach Juice", sr: "Breskva", ru: "Персиковый сок" },
         description: { en: "Fruit juice (0.2l)", sr: "Voćni sok (0.2l)", ru: "Фруктовый сок (0.2л)" },
-        price: 2.30,
+        price: 2.50,
         category: "soft-drinks",
         imageUrl: "/placeholder.svg"
       },
@@ -1609,7 +1609,7 @@ export const menuData: MenuCategory[] = [
         id: "soft-drinks-11",
         name: { en: "Orange Juice", sr: "Pomorandža", ru: "Апельсиновый сок" },
         description: { en: "Fruit juice (0.2l)", sr: "Voćni sok (0.2l)", ru: "Фруктовый сок (0.2л)" },
-        price: 2.30,
+        price: 2.50,
         category: "soft-drinks",
         imageUrl: "/placeholder.svg"
       },
@@ -1617,7 +1617,7 @@ export const menuData: MenuCategory[] = [
         id: "soft-drinks-12",
         name: { en: "Cedevita", sr: "Cedevita", ru: "Цедевита" },
         description: { en: "Vitamin drink with water", sr: "Vitaminsko osvježenje uz vodu", ru: "Витаминный напиток с водой" },
-        price: 2.00,
+        price: 2.20,
         category: "soft-drinks",
         imageUrl: "/placeholder.svg"
       },
@@ -1649,13 +1649,17 @@ export const menuData: MenuCategory[] = [
     items: [
       {
         id: "cocktails-01",
-        name: { en: "Mojito", sr: "Mojito", ru: "Мохито" },
-        description: { 
-          en: "White rum, fresh lime, mint leaves, brown sugar, soda water", 
-          sr: "Bijeli rum, svježa limeta, nana, smeđi šećer, kiselica", 
-          ru: "Белый ром, свежий лайм, мята, тростниковый сахар, газированная вода" 
+        name: { 
+          en: "Ramazzotti Limoncello Spritz", 
+          sr: "Ramazzotti Limoncello Spritz", 
+          ru: "Лимончелло Спритц от Ramazzotti" 
         },
-        price: 6.00,
+        description: { 
+          en: "Ramazzotti Limoncello, prosecco, soda water, fresh lemon slice", 
+          sr: "Ramazzotti Limoncello, prosecco, kiselica, kriška svježeg limuna", 
+          ru: "Ramazzotti Limoncello, просекко, газированная вода, долька свежего лимона" 
+        },
+        price: 9.00,
         category: "cocktails",
         imageUrl: "/placeholder.svg"
       },
@@ -1667,7 +1671,7 @@ export const menuData: MenuCategory[] = [
           sr: "Aperol, prosecco, kiselica, kriška svježe pomorandže", 
           ru: "Апероль, просекко, газированная вода, долька свежего апельсина" 
         },
-        price: 6.00,
+        price: 9.00,
         category: "cocktails",
         imageUrl: "/placeholder.svg"
       },
@@ -1679,7 +1683,7 @@ export const menuData: MenuCategory[] = [
           sr: "Premium džin, tonik, svježi krastavac ili limeta", 
           ru: "Премиум джин, тоник, свежий огурец или лайм" 
         },
-        price: 5.00,
+        price: 6.00,
         category: "cocktails",
         imageUrl: "/placeholder.svg"
       },
@@ -1689,9 +1693,9 @@ export const menuData: MenuCategory[] = [
         description: { 
           en: "Tequila, triple sec, fresh lime juice, salt rim", 
           sr: "Tekila, triple sec, svježi sok od limete, obod od soli", 
-          ru: "Текила, трипл-сек, свежий сок лайма, соляна каемка" 
+          ru: "Текила, трипл-сек, свежий сок лайма, соляная каемка" 
         },
-        price: 6.00,
+        price: 8.00,
         category: "cocktails",
         imageUrl: "/placeholder.svg"
       },
@@ -1703,13 +1707,12 @@ export const menuData: MenuCategory[] = [
           sr: "Votka, triple sec, sok od brusnice, svježi sok od limete", 
           ru: "Водка, трипл-сек, клюквенный сок, свежий сок лайма" 
         },
-        price: 6.00,
+        price: 8.00,
         category: "cocktails",
         imageUrl: "/placeholder.svg"
       }
     ]
-  },
-  
+  }
 ];
 
 //  Экспортируем готовый отфильтрованный массив популярных блюд
