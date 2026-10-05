@@ -85,11 +85,11 @@
     "hours": {
       "title": "Opening Hours",
       "weekday": "Monday - Friday",
-      "weekdayTime": "08:00 AM - 11:00 PM",
+      "weekdayTime": "08:00 - 23:00",
       "saturday": "Saturday",
-      "saturdayTime": "08:00 AM - 11:00 PM",
+      "saturdayTime": "08:00 - 23:00",
       "sunday": "Sunday",
-      "sundayTime": "08:00 AM - 11:00 PM",
+      "sundayTime": "08:00 - 23:00",
       "closed": "Closed on major holidays"
     }
   },
@@ -97,6 +97,8 @@
     "about": "A refined restaurant in Sutomore blending Balkan tradition with modern culinary artistry. Every dish tells a story of passion and craft.",
     "address": "Address",
     "addressValue": "Partizanski put 176, Sutomore 85355, Montenegro",
+    "hours": "Working Hours",
+    "hoursValue": "Mon - Sun: 08:00 - 23:00",
     "phone": "Phone",
     "phoneValue": "+382 67 848 108",
     "email": "Email",

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
-import { Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react";
+import { Facebook, Instagram, MapPin, Phone, Mail, Clock } from "lucide-react";
 import type { SupportedLanguage } from "@/i18n";
 import { supportedLanguages } from "@/i18n";
 
@@ -22,6 +22,7 @@ export default function AppFooter() {
               {t("footer.about")}
             </p>
             <div className="space-y-2 pt-2">
+              {/* Address */}
               <div className="flex items-start gap-2 text-sm text-secondary-foreground/70">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 <span>
@@ -29,13 +30,31 @@ export default function AppFooter() {
                   {t("footer.addressValue")}
                 </span>
               </div>
+
+              {/* Working Hours */}
+              <div className="flex items-start gap-2 text-sm text-secondary-foreground/70">
+                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                <span>
+                  <span className="font-semibold text-secondary-foreground/90">{t("footer.hours")}:</span>{" "}
+                  {t("footer.hoursValue")}
+                </span>
+              </div>
+
+              {/* Phone */}
               <div className="flex items-center gap-2 text-sm text-secondary-foreground/70">
                 <Phone className="h-4 w-4 shrink-0 text-primary" />
                 <span>
                   <span className="font-semibold text-secondary-foreground/90">{t("footer.phone")}:</span>{" "}
-                  {t("footer.phoneValue")}
+                  <a 
+                    href={`tel:${t("footer.phoneValue").replace(/\s+/g, "")}`} 
+                    className="hover:text-primary transition-colors"
+                  >
+                    {t("footer.phoneValue")}
+                  </a>
                 </span>
               </div>
+
+              {/* Email */}
               <div className="flex items-center gap-2 text-sm text-secondary-foreground/70">
                 <Mail className="h-4 w-4 shrink-0 text-primary" />
                 <span>
