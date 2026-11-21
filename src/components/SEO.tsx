@@ -75,9 +75,30 @@ function setXDefault(url: string) {
   el.setAttribute("href", url);
 }
 
+function stripTrailingSlash(path: string) {
+  if (!path || path === "/") return "/";
+  return path.replace(/\/+$/, "") || "/";
+}
+
+function normalizeUrl(rawUrl: string) {
+  try {
+    const parsed = new URL(rawUrl);
+    if (parsed.pathname !== "/" && parsed.pathname.endsWith("/")) {
+      parsed.pathname = parsed.pathname.replace(/\/+$/, "");
+    }
+    return parsed.toString();
+  } catch {
+    return stripTrailingSlash(rawUrl);
+  }
+}
+
 function localizedPath(pathname: string, targetLang: SupportedLanguage) {
-  const cleanPath = pathname.replace(/^\/(en|sr|ru)(?=\/|$)/, "") || "/";
-  return `/${targetLang}${cleanPath === "/" ? "" : cleanPath}`;
+  const normalizedInput = stripTrailingSlash(pathname);
+  const cleanPath =
+    normalizedInput.replace(/^\/(en|sr|ru)(?=\/|$)/, "") || "/";
+  return stripTrailingSlash(
+    `/${targetLang}${cleanPath === "/" ? "" : cleanPath}`
+  );
 }
 
 /**
@@ -102,9 +123,15 @@ export default function SEO({
     const finalTitle = title ?? defaults.title;
     const finalDescription = description ?? defaults.description;
     const finalImage = absoluteUrl(image ?? siteConfig.ogImagePath);
-    const url = canonical ?? absoluteUrl(pathname || "/");
+    const normalizedPathname = stripTrailingSlash(pathname || "/");
+    const url = canonical
+      ? normalizeUrl(canonical)
+      : normalizeUrl(absoluteUrl(normalizedPathname));
+
     const alternatePaths = supportedLanguages.reduce((acc, supportedLang) => {
-      acc[supportedLang] = absoluteUrl(localizedPath(pathname || "/", supportedLang));
+      acc[supportedLang] = normalizeUrl(
+        absoluteUrl(localizedPath(normalizedPathname, supportedLang))
+      );
       return acc;
     }, {} as Record<SupportedLanguage, string>);
 

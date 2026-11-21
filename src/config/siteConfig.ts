@@ -35,7 +35,7 @@ export const siteConfig = {
     sr: {
       title: "ТРПЕЗА — Balkanska kuhinja i jadranski plodovi mora",
       description:
-        "Otkrijte autentične balkanske ukuse i najsvežije plodove mora Jadrana. Rezervišite svoj sto u ТРПЕЗА još danas.",
+        "Otkrijte autentične balkanske ukuse i najsvežije морепродукты Адриатики. Rezervišite svoj sto u ТРПЕЗА još danas.",
     },
     ru: {
       title: "ТРПЕЗА — Балканская кухня и морепродукты Адриатики",
@@ -50,7 +50,18 @@ export type SupportedSeoLocale = keyof typeof siteConfig.defaults;
 /** Build an absolute URL from a path or pass through if already absolute. */
 export function absoluteUrl(pathOrUrl: string): string {
   if (/^https?:\/\//i.test(pathOrUrl)) return pathOrUrl;
-  const base = siteConfig.siteUrl.replace(/\/$/, "");
+  const base = siteConfig.siteUrl.replace(/\/+$/, "");
   const path = pathOrUrl.startsWith("/") ? pathOrUrl : `/${pathOrUrl}`;
   return `${base}${path}`;
+}
+
+/** Build a canonical / hreflang URL without trailing slash (keeps root as siteUrl). */
+export function canonicalUrl(pathOrUrl: string): string {
+  const full = absoluteUrl(pathOrUrl);
+  const url = new URL(full);
+  const cleanPathname = url.pathname.replace(/\/+$/, "");
+  url.pathname = cleanPathname || "/";
+  return url.pathname === "/"
+    ? `${url.origin}${url.search}${url.hash}`
+    : `${url.origin}${url.pathname}${url.search}${url.hash}`;
 }
